@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Id>aec23df2-254a-485d-8638-fc3faf872c1f</Id>
+  <Name>BellNotificationHub</Name>
+  <Url />
+  <QueryString />
+  <HttpProtocol>1.1</HttpProtocol>
+  <Timeout>30</Timeout>
+  <ProjectFileEncoding>utf-8</ProjectFileEncoding>
+  <Description />
+  <RequestEncoding>utf-8</RequestEncoding>
+  <AutomaticDecompression>true</AutomaticDecompression>
+  <DynamicParameters>
+    <DynamicParameter>
+      <Id>f9c70061-c8db-481b-88fb-f4a5f00acdab</Id>
+      <Name>host_BlueID</Name>
+      <DataType>text</DataType>
+      <GenerationType>manual</GenerationType>
+      <DateIncrementType />
+      <DateFormat />
+      <NumberType />
+      <DecimalSymbol />
+      <DigitGroupingSymbol />
+      <MinimumValue />
+      <MaximumValue />
+      <Increment />
+      <Filename />
+      <FileEncoding />
+      <Regex />
+      <MatchCase>false</MatchCase>
+      <Function />
+      <SingleValue>blueid.seniorsoft.com/blueid</SingleValue>
+      <PercentEncode>false</PercentEncode>
+      <ListValues />
+      <ListBehavior>0</ListBehavior>
+    </DynamicParameter>
+    <DynamicParameter>
+      <Id>a2fb1be8-13ae-4842-81a5-e58299e74629</Id>
+      <Name>JWT_Server</Name>
+      <DataType>text</DataType>
+      <GenerationType>manual</GenerationType>
+      <DateFormat />
+      <MatchCase>false</MatchCase>
+      <Function />
+      <SingleValue>eyJhbGciOiJSUzI1NiIsImtpZCI6IkRCOUU2QkVGMzNCQjU2MDNCQzlFMUIyMTM1NTdBRkJFNjlCRjBCNTEiLCJ4NXQiOiIyNTVyN3pPN1ZnTzhuaHNoTlZldnZtbV9DMUUiLCJ0eXAiOiJhdCtqd3QifQ.eyJzdWIiOiJHYWJhbmFXb3JrZXIiLCJvaV9wcnN0IjoiR2FiYW5hV29ya2VyIiwiY2xpZW50X2lkIjoiR2FiYW5hV29ya2VyIiwib2lfdGtuX2lkIjoiZjJhOGQ1OWItYzIxNy00N2IyLWFjYzMtMTUzMDBiMzFjYzY5IiwiYXVkIjoiQmVsbE5vdGlmaWNhdGlvbkh1YiIsInNjb3BlIjoiZ2FiYW5hYmVsbGh1Yi5zZXJ2ZXJhY2Nlc3MiLCJleHAiOjE2NzM2MDM5ODYsImlzcyI6Imh0dHBzOi8vYmx1ZWlkLnNlbmlvcnNvZnQuY29tL2JsdWVpZCIsImlhdCI6MTY3MzUxNzU4Nn0.AudTI5ml2o9vDoY_SdNsvYLtBp1QA3oN5uS4A1roNYIccPCdHfm6Vf8r3a9RCG3yEtqqmgTYI6KosS2rX-qVsx2HlcRkGvZT2lNLu6W1CU-MzlPn5BeR-4dQoUUNbKggKZOTU9vOS9mr7G_NO72ROgcFoTpr3ptWdV9IY9GZhTr8qS6iYdhbVGiQTHPRElg33DA_YfyTiVOp2hcHkwCfIvlMM8sn1K2ZgqJ3KP0A5QaiTpnYBOlwhgHqh4fmxOB3dMO3R9en6fHBvT-ESpl3YwFTOz3XPs7aNL9b4-sMvFPQU6XRaB8bkup-Gwtxgx9sYuXVXtcKeGNMfgtRk6lx7Q</SingleValue>
+      <PercentEncode>true</PercentEncode>
+      <ListValues />
+      <ListBehavior>0</ListBehavior>
+    </DynamicParameter>
+    <DynamicParameter>
+      <Id>1539a7b7-da4e-49e6-ab67-1a7f5d7c78d9</Id>
+      <Name>host_BellNotificationHub</Name>
+      <DataType>text</DataType>
+      <GenerationType>manual</GenerationType>
+      <DateFormat />
+      <MatchCase>false</MatchCase>
+      <Function />
+      <SingleValue>https://msg.seniorsoft.com/BellNotificationHub</SingleValue>
+      <PercentEncode>false</PercentEncode>
+      <ListValues />
+      <ListBehavior>0</ListBehavior>
+    </DynamicParameter>
+    <DynamicParameter>
+      <Id>5918fb91-2fca-41e6-a383-c0c4959978ac</Id>
+      <Name>http</Name>
+      <DataType>text</DataType>
+      <GenerationType>manual</GenerationType>
+      <DateFormat />
+      <MatchCase>false</MatchCase>
+      <Function />
+      <SingleValue>https</SingleValue>
+      <PercentEncode>false</PercentEncode>
+      <ListValues />
+      <ListBehavior>0</ListBehavior>
+    </DynamicParameter>
+  </DynamicParameters>
+  <Headers />
+  <UseAuthentication>false</UseAuthentication>
+  <AuthenticationData>
+    <AuthenticationCredentials />
+    <SpecifiedCredentials />
+  </AuthenticationData>
+  <AllowRedirect>true</AllowRedirect>
+  <KeepAlive>true</KeepAlive>
+  <EncodeUrl>true</EncodeUrl>
+  <EncodeForm>true</EncodeForm>
+  <ProjectItems>
+    <ProjectItem>
+      <Id>17bd80ae-8dfe-4a42-b705-2b85bbddc26c</Id>
+      <Name>get version</Name>
+      <Url>{1539a7b7-da4e-49e6-ab67-1a7f5d7c78d9}</Url>
+      <RequestBody />
+      <Method>GET</Method>
+      <ContentType />
+      <ExecutionCount>1</ExecutionCount>
+      <UrlOption>absolute</UrlOption>
+      <AppendGlobalQueryString>false</AppendGlobalQueryString>
+      <CreateDate>637310136916319561</CreateDate>
+      <ChangeDate>637310317168024352</ChangeDate>
+      <ValidationRule />
+      <IncludeProjectAuthentication>true</IncludeProjectAuthentication>
+      <PercentEncodeParameters d4p1:nil="true" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+      <IncludeReceivedCookies>false</IncludeReceivedCookies>
+      <IncludeProjectHeaders>true</IncludeProjectHeaders>
+      <ItemHeaders />
+      <BodySource d4p1:nil="true" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+      <AdditionalHeaders />
+      <ExecutionOrder>1</ExecutionOrder>
+      <IncludeWithCommandLine>true</IncludeWithCommandLine>
+      <IgnoreExecution>false</IgnoreExecution>
+      <IncludedCookies />
+      <UploadAsBase64>false</UploadAsBase64>
+      <Description />
+      <ValidationExecutionBehavior>0</ValidationExecutionBehavior>
+      <OperationId />
+      <RewriteCookieDomain>false</RewriteCookieDomain>
+      <BodyViewer>0</BodyViewer>
+      <ValidationType>0</ValidationType>
+      <PreActionPath />
+      <PreActionArguments />
+      <PreActionWorkingDirectory />
+      <PreActionCondition>0</PreActionCondition>
+      <PostActionPath />
+      <PostActionArguments />
+      <PostActionWorkingDirectory />
+      <PostActionCondition>0</PostActionCondition>
+      <ParameterOrder>0</ParameterOrder>
+      <ManualExecutionCount>false</ManualExecutionCount>
+      <AddedCookies />
+    </ProjectItem>
+    <ProjectItem>
+      <Id>50c0f07c-e0ec-49b9-9dce-9dced59a5504</Id>
+      <Name>Gabana-BellNotificationHub Server Push Message Lab</Name>
+      <Url>{1539a7b7-da4e-49e6-ab67-1a7f5d7c78d9}/GabanaNotification/PushNotificationLab</Url>
+      <RequestBody>{
+"MerchantID": 99900018,
+"Title" : "Item Changed",
+"Body" : "Item Changed",
+"Action" : "Item",
+"CodeNo" : "123",
+"ExceptDeviceNo" : 0
+}
+
+</RequestBody>
+      <Method>POST</Method>
+      <ContentType>application/json</ContentType>
+      <ExecutionCount>1</ExecutionCount>
+      <UrlOption>absolute</UrlOption>
+      <AppendGlobalQueryString>false</AppendGlobalQueryString>
+      <CreateDate>637480257486954527</CreateDate>
+      <ChangeDate>637481196062724519</ChangeDate>
+      <ValidationRule />
+      <IncludeProjectAuthentication>true</IncludeProjectAuthentication>
+      <PercentEncodeParameters d4p1:nil="true" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+      <IncludeReceivedCookies>false</IncludeReceivedCookies>
+      <IncludeProjectHeaders>false</IncludeProjectHeaders>
+      <ItemHeaders />
+      <BodySource>0</BodySource>
+      <AdditionalHeaders>Authorization:Bearer {a2fb1be8-13ae-4842-81a5-e58299e74629}</AdditionalHeaders>
+      <ExecutionOrder>24</ExecutionOrder>
+      <IncludeWithCommandLine>true</IncludeWithCommandLine>
+      <IgnoreExecution>false</IgnoreExecution>
+      <IncludedCookies />
+      <UploadAsBase64>false</UploadAsBase64>
+      <Description />
+      <ValidationExecutionBehavior>0</ValidationExecutionBehavior>
+      <OperationId />
+      <RewriteCookieDomain>false</RewriteCookieDomain>
+      <BodyViewer>2</BodyViewer>
+      <ValidationType>0</ValidationType>
+      <PreActionPath />
+      <PreActionArguments />
+      <PreActionWorkingDirectory />
+      <PreActionCondition>0</PreActionCondition>
+      <PostActionPath />
+      <PostActionArguments />
+      <PostActionWorkingDirectory />
+      <PostActionCondition>0</PostActionCondition>
+      <ParameterOrder>0</ParameterOrder>
+      <ManualExecutionCount>false</ManualExecutionCount>
+      <AddedCookies />
+    </ProjectItem>
+    <ProjectItem>
+      <Id>899a7604-2a90-462a-a723-28b07e60f8c4</Id>
+      <Name>Gabana-BellNotificationHub Server Push Message</Name>
+      <Url>{1539a7b7-da4e-49e6-ab67-1a7f5d7c78d9}/GabanaNotification/PushNotification</Url>
+      <RequestBody>{
+"MerchantID": 99900003,
+"Title" : "Item Changed",
+"Body" : "Item Changed",
+"Action" : "Item",
+"CodeNo" : "123",
+"ExceptDeviceNo" : 0
+}
+
+</RequestBody>
+      <Method>POST</Method>
+      <ContentType>application/json</ContentType>
+      <ExecutionCount>1</ExecutionCount>
+      <UrlOption>absolute</UrlOption>
+      <AppendGlobalQueryString>false</AppendGlobalQueryString>
+      <CreateDate>637479588838248771</CreateDate>
+      <ChangeDate>638091379721244304</ChangeDate>
+      <ValidationRule />
+      <IncludeProjectAuthentication>true</IncludeProjectAuthentication>
+      <PercentEncodeParameters d4p1:nil="true" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+      <IncludeReceivedCookies>false</IncludeReceivedCookies>
+      <IncludeProjectHeaders>false</IncludeProjectHeaders>
+      <ItemHeaders />
+      <BodySource>0</BodySource>
+      <AdditionalHeaders>Authorization:Bearer {a2fb1be8-13ae-4842-81a5-e58299e74629}</AdditionalHeaders>
+      <ExecutionOrder>23</ExecutionOrder>
+      <IncludeWithCommandLine>true</IncludeWithCommandLine>
+      <IgnoreExecution>false</IgnoreExecution>
+      <IncludedCookies />
+      <UploadAsBase64>false</UploadAsBase64>
+      <Description />
+      <ValidationExecutionBehavior>0</ValidationExecutionBehavior>
+      <OperationId />
+      <RewriteCookieDomain>false</RewriteCookieDomain>
+      <BodyViewer>2</BodyViewer>
+      <ValidationType>0</ValidationType>
+      <PreActionPath />
+      <PreActionArguments />
+      <PreActionWorkingDirectory />
+      <PreActionCondition>0</PreActionCondition>
+      <PostActionPath />
+      <PostActionArguments />
+      <PostActionWorkingDirectory />
+      <PostActionCondition>0</PostActionCondition>
+      <ParameterOrder>0</ParameterOrder>
+      <ManualExecutionCount>false</ManualExecutionCount>
+      <AddedCookies />
+    </ProjectItem>
+    <ProjectItem>
+      <Id>30718a67-b6b6-4f5e-9917-64c7a2012fda</Id>
+      <Name>GabanaWorker GetToken grant_type = client_credentials</Name>
+      <Url>{5918fb91-2fca-41e6-a383-c0c4959978ac}://{f9c70061-c8db-481b-88fb-f4a5f00acdab}/connect/token</Url>
+      <RequestBody>grant_type=client_credentials
+client_id=GabanaWorker
+client_secret=PEl6MoA3lX1USncl8zCL8peodeJq2BU3Tuv1FjyMRUsHYSxxRvsw3BTI2nX9UsPJu73UV9KcZicdballDh1lrg
+scope=gabanabellhub.serveraccess</RequestBody>
+      <Method>POST</Method>
+      <ContentType>application/x-www-form-urlencoded</ContentType>
+      <ExecutionCount>1</ExecutionCount>
+      <UrlOption>absolute</UrlOption>
+      <AppendGlobalQueryString>false</AppendGlobalQueryString>
+      <CreateDate>637481195752602330</CreateDate>
+      <ChangeDate>638091390483886852</ChangeDate>
+      <ValidationRule />
+      <IncludeProjectAuthentication>true</IncludeProjectAuthentication>
+      <PercentEncodeParameters d4p1:nil="true" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance" />
+      <IncludeReceivedCookies>false</IncludeReceivedCookies>
+      <IncludeProjectHeaders>true</IncludeProjectHeaders>
+      <ItemHeaders />
+      <BodySource>0</BodySource>
+      <AdditionalHeaders />
+      <ExecutionOrder>22</ExecutionOrder>
+      <IncludeWithCommandLine>true</IncludeWithCommandLine>
+      <IgnoreExecution>false</IgnoreExecution>
+      <IncludedCookies />
+      <UploadAsBase64>false</UploadAsBase64>
+      <Description>เอาไว้ใช้งานกับ Client ที่เป็น System จริง ๆ เพราะ
+Clinet จะไม่สามารถ Control เรื่อง ของ Merchant ได้เลย</Description>
+      <ValidationExecutionBehavior>0</ValidationExecutionBehavior>
+      <OperationId />
+      <RewriteCookieDomain>false</RewriteCookieDomain>
+      <BodyViewer>0</BodyViewer>
+      <ValidationType>0</ValidationType>
+      <PreActionPath />
+      <PreActionArguments />
+      <PreActionWorkingDirectory />
+      <PreActionCondition>0</PreActionCondition>
+      <PostActionPath />
+      <PostActionArguments />
+      <PostActionWorkingDirectory />
+      <PostActionCondition>0</PostActionCondition>
+      <ParameterOrder>0</ParameterOrder>
+      <ManualExecutionCount>false</ManualExecutionCount>
+      <AddedCookies />
+    </ProjectItem>
+  </ProjectItems>
+  <CreateDate>636747558628425314</CreateDate>
+  <ChangeDate>638091395482369455</ChangeDate>
+  <Version>55</Version>
+  <MonitorData>true</MonitorData>
+  <Validations />
+  <ExecutionDelay>0</ExecutionDelay>
+  <FirstExecutionDelay>0</FirstExecutionDelay>
+  <Chainings />
+  <ExecutionGroups />
+  <GlobalUrlList />
+  <GlobalQueryStringList />
+  <AuthorizationDataEnabled>false</AuthorizationDataEnabled>
+  <AuthorizationUrl />
+  <AuthorizationRedirectUrl />
+  <AuthorizationClientId />
+  <AuthorizationClientSecret />
+  <AuthorizationExchangeUrl />
+  <AuthorizationPrompt>false</AuthorizationPrompt>
+  <SaveCompact>false</SaveCompact>
+</Project>

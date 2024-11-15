@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <!--Header-->
+    <RelativeLayout
+        android:layout_alignParentTop ="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/primary">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:contentDescription="@string/login_fragment_main_btn_back"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/imgBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@mipmap/backw" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lnBack"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_fragment_otp_tital"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:src="@mipmap/otp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"/>
+            <TextView
+                android:textSize="16dp"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/eclipse"
+                android:text = "@string/login_fragment_otp_verify_l1"/>
+            <TextView
+                android:textSize="16dp"
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/eclipse"
+                android:text = "@string/login_fragment_otp_verify_l2"/>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:paddingTop="5dp"
+                    android:id = "@+id/txtnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/eclipse"
+                    android:text = "@string/login_fragment_otp_verify_l3" />
+                <TextView
+                    android:textSize="16dp"
+                    android:text=","
+                    android:paddingTop="5dp"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryDark"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/txtref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primaryDark"
+                    android:text = "@string/login_fragment_otp_verify_l4"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id = "@+id/lnotp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation = "horizontal"
+            android:gravity = "center">
+            <TextView
+                android:id="@+id/editText1"
+                android:textSize="23dp"
+                android:textColor = "@color/primary"
+                android:background="@drawable/edtWhiteBorderGray"
+                android:gravity = "center"
+                android:layout_width = "40dp"
+                android:layout_height="50dp"
+                android:maxLength ="1"
+                android:maxLines = "1"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="0.5dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/editText2"
+                android:textSize="23dp"
+                android:textColor = "@color/primary"
+                android:background="@drawable/edtWhiteBorderGray"
+                android:gravity = "center"
+                android:layout_width = "40dp"
+                android:layout_height="50dp"
+                android:maxLength ="1"
+                android:maxLines = "1"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="0.5dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/editText3"
+                android:textSize="23dp"
+                android:textColor = "@color/primary"
+                android:background="@drawable/edtWhiteBorderGray"
+                android:gravity = "center"
+                android:layout_width = "40dp"
+                android:layout_height="50dp"
+                android:maxLength ="1"
+                android:maxLines = "1"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="0.5dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/editText4"
+                android:textSize="23dp"
+                android:textColor = "@color/primary"
+                android:background="@drawable/edtWhiteBorderGray"
+                android:gravity = "center"
+                android:layout_width = "40dp"
+                android:layout_height="50dp"
+                android:maxLength ="1"
+                android:maxLines = "1"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="0.5dp"
+                android:background="#fff"/>
+
+            <TextView
+                android:id="@+id/editText5"
+                android:textSize="23dp"
+                android:textColor = "@color/primary"
+                android:background="@drawable/edtWhiteBorderGray"
+                android:gravity = "center"
+                android:layout_width = "40dp"
+                android:layout_height="50dp"
+                android:maxLength ="1"
+                android:maxLines = "1"/>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="0.5dp"
+                android:background="#fff"/>
+            <TextView
+                android:id="@+id/editText6"
+                android:textSize="23dp"
+                android:textColor = "@color/primary"
+                android:background="@drawable/edtWhiteBorderGray"
+                android:gravity = "center"
+                android:layout_width = "40dp"
+                android:layout_height="50dp"
+                android:maxLength ="1"
+                android:maxLines = "1"/>
+        </LinearLayout>
+        <EditText
+            android:cursorVisible="false"
+            android:layout_marginTop="-60dp"
+            android:inputType="number"
+            android:focusable="auto"
+            android:textSize="40dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/transparent"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:id="@+id/textOTP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id = "@+id/txtAleart"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:contentDescription="@string/login_fragment_main_btn_back"
+                android:background="@mipmap/backb"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/eclipse"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:text="@string/empmanage_activity_title"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lnBack"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View
+        android:background="@color/linegraycolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_weight ="0.8"
+        android:id="@+id/swRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_listempmanage"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.chip.Chip
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.MaterialComponents.Chip.Action"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="Cart"
+    android:id="@+id/chip_item"
+    app:chipStrokeColor="@color/primary"
+    android:textColor="@color/primary"
+    app:chipCornerRadius="5dp"
+    app:chipStrokeWidth="1dp"
+    app:chipBackgroundColor="@android:color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</android.support.design.chip.Chip>
+    
+    

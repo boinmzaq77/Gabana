@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool\LaunchScreen.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>LaunchScreen.nib</LogicalName>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\Info.plist">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\DummyItemController.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/DummyItemController.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\DummyItemController.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/DummyItemController.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\CartResultController.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/CartResultController.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\CartResultController.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/CartResultController.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\102635-view-102636.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/102635-view-102636.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\102635-view-102636.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/102635-view-102636.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\245950-view-245951.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/245950-view-245951.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\245950-view-245951.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/245950-view-245951.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\112391-view-112392.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/112391-view-112392.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\112391-view-112392.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/112391-view-112392.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\PaymentController.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/PaymentController.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\PaymentController.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/PaymentController.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\225-view-226.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/225-view-226.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\225-view-226.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/225-view-226.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\129666-view-129667.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/129666-view-129667.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\129666-view-129667.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/129666-view-129667.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\UIViewController-225.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/UIViewController-225.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\UIViewController-225.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/UIViewController-225.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\ScanItemsQrController.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/ScanItemsQrController.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\ScanItemsQrController.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/ScanItemsQrController.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\AddNewItemPOSController.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/AddNewItemPOSController.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\AddNewItemPOSController.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/AddNewItemPOSController.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\107351-view-107352.nib\runtime.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/107351-view-107352.nib/runtime.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\POS.storyboardc\107351-view-107352.nib\objects-12.3+.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>POS.storyboardc/107351-view-107352.nib/objects-12.3+.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/POS.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\LogInOTP.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/LogInOTP.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\16953-view-16954.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/16953-view-16954.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\370923-view-370924.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/370923-view-370924.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\editProfileController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/editProfileController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\Login.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/Login.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\logInNavigation.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/logInNavigation.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\MainNavigationController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/MainNavigationController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\13970-view-13971.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/13970-view-13971.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\MainPageController.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/MainPageController.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\311-view-312.nib">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/311-view-312.nib</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj\iPhone\Debug\device-builds\iphone9.3-14.2\ibtool-link\Main.storyboardc\Info.plist">
+      <Optimize>false</Optimize>
+      <LogicalName>Main.storyboardc/Info.plist</LogicalName>
+      <OriginalItemSpec>obj/iPhone/Debug/device-builds/iphone9.3-14.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

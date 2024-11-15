@@ -1,0 +1,1075 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Gabana3.Client\\Gabana.Droid.Tablet\\Gabana.Droid.Tablet.csproj": {}
+  },
+  "projects": {
+    "E:\\Gabana3.Client\\Gabana.Droid.Tablet\\Gabana.Droid.Tablet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Client\\Gabana.Droid.Tablet\\Gabana.Droid.Tablet.csproj",
+        "projectName": "Gabana.Droid.Tablet",
+        "projectPath": "E:\\Gabana3.Client\\Gabana.Droid.Tablet\\Gabana.Droid.Tablet.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Client\\Gabana.Droid.Tablet\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid12.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid12.0": {
+            "projectReferences": {
+              "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj"
+              },
+              "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj"
+              },
+              "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj"
+              },
+              "E:\\Gabana3.Client\\Gabana.ShareSource\\Gabana.ShareSource.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ShareSource\\Gabana.ShareSource.csproj"
+              },
+              "E:\\Gabana3.Client\\Microcharts\\Microcharts.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Microcharts\\Microcharts.csproj"
+              },
+              "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj"
+              },
+              "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj"
+              },
+              "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj"
+              },
+              "E:\\TinyInsights\\TinyInsights.ApplicationInsights\\TinyInsights.ApplicationInsights.csproj": {
+                "projectPath": "E:\\TinyInsights\\TinyInsights.ApplicationInsights\\TinyInsights.ApplicationInsights.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid12.0": {
+          "dependencies": {
+            "Dexter": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Glide.Xamarin": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.6, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.7, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "Xamarin.Android.Arch.Lifecycle.Common": {
+              "target": "Package",
+              "version": "[1.1.1.3, )"
+            },
+            "Xamarin.Android.Arch.Lifecycle.Extensions": {
+              "target": "Package",
+              "version": "[1.1.1.3, )"
+            },
+            "Xamarin.Android.Arch.Lifecycle.LiveData.Core": {
+              "target": "Package",
+              "version": "[1.1.1.3, )"
+            },
+            "Xamarin.Android.Arch.Lifecycle.Runtime": {
+              "target": "Package",
+              "version": "[1.1.1.3, )"
+            },
+            "Xamarin.Android.Google.BillingClient": {
+              "target": "Package",
+              "version": "[6.0.0.1, )"
+            },
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.AndroidX.Legacy.Support.Core.UI": {
+              "target": "Package",
+              "version": "[1.0.0.5, )"
+            },
+            "Xamarin.AndroidX.Lifecycle.LiveData": {
+              "target": "Package",
+              "version": "[2.2.0.3, )"
+            },
+            "Xamarin.AndroidX.Lifecycle.Process": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Xamarin.AndroidX.Lifecycle.Service": {
+              "target": "Package",
+              "version": "[2.2.0.3, )"
+            },
+            "Xamarin.AndroidX.RecyclerView": {
+              "target": "Package",
+              "version": "[1.1.0.8, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.FFImageLoading": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.Firebase.Messaging": {
+              "target": "Package",
+              "version": "[71.1740.4, )"
+            },
+            "Xamarin.Google.Android.Material": {
+              "target": "Package",
+              "version": "[1.1.0.5, )"
+            },
+            "Xamarin.GooglePlayServices.Tasks": {
+              "target": "Package",
+              "version": "[71.1601.4, )"
+            },
+            "Xamarin.ShortcutBadger": {
+              "target": "Package",
+              "version": "[1.1.21, )"
+            },
+            "ZXing.XamarinAndroid": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "iTextSharp.LGPLv2.Core": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            }
+          }
+        }
+      }
+    },
+    "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj",
+        "projectName": "Gabana.Model",
+        "projectPath": "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Client\\Gabana.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj"
+              },
+              "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj",
+        "projectName": "Gabana.ORM.MerchantDB",
+        "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "linq2db.SQLite.MS": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj",
+        "projectName": "Gabana.ORM.PoolDB",
+        "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "linq2db.SQLite.MS": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Client\\Gabana.ShareSource\\Gabana.ShareSource.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Client\\Gabana.ShareSource\\Gabana.ShareSource.csproj",
+        "projectName": "Gabana.ShareSource",
+        "projectPath": "E:\\Gabana3.Client\\Gabana.ShareSource\\Gabana.ShareSource.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Client\\Gabana.ShareSource\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.Model\\Gabana.Model.csproj"
+              },
+              "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj"
+              },
+              "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.PoolDB\\Gabana.ORM.PoolDB.csproj"
+              },
+              "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj"
+              },
+              "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "IdentityModel": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Plugin.BLE": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1687, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Client\\Microcharts\\Microcharts.csproj": {
+      "version": "0.9.5.1",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Client\\Microcharts\\Microcharts.csproj",
+        "projectName": "Microcharts",
+        "projectPath": "E:\\Gabana3.Client\\Microcharts\\Microcharts.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Client\\Microcharts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.6, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj",
+        "projectName": "Gabana3.DataModel",
+        "projectPath": "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Share\\Gababa3.DataModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj",
+        "projectName": "Gabana.ORM",
+        "projectPath": "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Share\\Gabana.ORM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj": {
+                "projectPath": "E:\\Gabana3.Client\\Gabana.ORM.MerchantDB\\Gabana.ORM.MerchantDB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "linq2db.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "linq2db.SQLite": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj",
+        "projectName": "Gabana3.JAM",
+        "projectPath": "E:\\Gabana3.Share\\Gabana3.JAM\\Gabana3.JAM.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\Gabana3.Share\\Gabana3.JAM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gababa3.DataModel\\Gabana3.DataModel.csproj"
+              },
+              "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj": {
+                "projectPath": "E:\\Gabana3.Share\\Gabana.ORM\\Gabana.ORM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\TinyInsights\\TinyInsights.ApplicationInsights\\TinyInsights.ApplicationInsights.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\TinyInsights\\TinyInsights.ApplicationInsights\\TinyInsights.ApplicationInsights.csproj",
+        "projectName": "TinyInsights.ApplicationInsights",
+        "projectPath": "E:\\TinyInsights\\TinyInsights.ApplicationInsights\\TinyInsights.ApplicationInsights.csproj",
+        "packagesPath": "C:\\Users\\SeniorSoft\\.nuget\\packages\\",
+        "outputPath": "E:\\TinyInsights\\TinyInsights.ApplicationInsights\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SeniorSoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "MonoAndroid10.0",
+          "MonoAndroid80",
+          "MonoAndroid81",
+          "MonoAndroid90",
+          "Xamarin.iOS10",
+          "net8.0-ios"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-ios17.0": {
+            "targetAlias": "net8.0-ios",
+            "projectReferences": {}
+          },
+          "monoandroid80": {
+            "targetAlias": "MonoAndroid80",
+            "projectReferences": {}
+          },
+          "monoandroid81": {
+            "targetAlias": "MonoAndroid81",
+            "projectReferences": {}
+          },
+          "monoandroid90": {
+            "targetAlias": "MonoAndroid90",
+            "projectReferences": {}
+          },
+          "monoandroid10.0": {
+            "targetAlias": "MonoAndroid10.0",
+            "projectReferences": {}
+          },
+          "xamarinios10": {
+            "targetAlias": "Xamarin.iOS10",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0-ios17.0": {
+          "targetAlias": "net8.0-ios",
+          "dependencies": {
+            "MSBuild.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.23, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.iOS": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        },
+        "monoandroid80": {
+          "targetAlias": "MonoAndroid80",
+          "dependencies": {
+            "MSBuild.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.23, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "monoandroid81": {
+          "targetAlias": "MonoAndroid81",
+          "dependencies": {
+            "MSBuild.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.23, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "monoandroid90": {
+          "targetAlias": "MonoAndroid90",
+          "dependencies": {
+            "MSBuild.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.23, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "monoandroid10.0": {
+          "targetAlias": "MonoAndroid10.0",
+          "dependencies": {
+            "MSBuild.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.23, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "xamarinios10": {
+          "targetAlias": "Xamarin.iOS10",
+          "dependencies": {
+            "MSBuild.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.23, )"
+            },
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

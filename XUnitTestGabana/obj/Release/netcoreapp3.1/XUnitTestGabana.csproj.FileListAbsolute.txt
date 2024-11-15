@@ -1,0 +1,5 @@
+D:\Gabana3.Client\XUnitTestGabana\obj\Release\netcoreapp3.1\XUnitTestGabana.csproj.AssemblyReference.cache
+D:\Gabana3.Client\XUnitTestGabana\obj\Release\netcoreapp3.1\XUnitTestGabana.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gabana3.Client\XUnitTestGabana\obj\Release\netcoreapp3.1\XUnitTestGabana.AssemblyInfoInputs.cache
+D:\Gabana3.Client\XUnitTestGabana\obj\Release\netcoreapp3.1\XUnitTestGabana.AssemblyInfo.cs
+D:\Gabana3.Client\XUnitTestGabana\obj\Release\netcoreapp3.1\XUnitTestGabana.csproj.CoreCompileInputs.cache

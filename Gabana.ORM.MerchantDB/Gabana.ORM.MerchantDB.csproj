@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>fd538fe6-5dde-465e-b949-0f8a4769dada</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\CopyMe.SqlServer.tt.txt" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\DataAnnotations.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\DataModel.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\EditableObject.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\Equatable.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\Humanizer.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\LinqToDB.SqlServer.SqlTypes.Tools.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\LinqToDB.SqlServer.Tools.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\LinqToDB.SqlServer.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\LinqToDB.Tools.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\LinqToDB.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\MultipleFiles.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\NotifyDataErrorInfo.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\NotifyPropertyChanged.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\ObsoleteAttributes.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\PluralizationService.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\T4Model.ttinclude" />
+    <None Remove="C:\Users\Got-DEV\.nuget\packages\linq2db.sqlserver\3.1.5\contentFiles\any\any\LinqToDB.Templates\Validation.ttinclude" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linq2db" Version="3.1.6" />
+    <PackageReference Include="linq2db.SQLite.MS" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Gabana.ORM.GenMerchantDB.generated.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Gabana.ORM.GenMerchantDB.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Gabana.ORM.MerchantDB.generated.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Gabana.ORM.MerchantDB.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Gabana.GenDB.MerchantDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Gabana.GenDB.MerchantDB.generated.cs</LastGenOutput>
+    </None>
+    <None Update="Gabana.ORM.GenMerchantDB.tt">
+      <LastGenOutput>Gabana.ORM.GenMerchantDB.generated.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
+    <None Update="Gabana.ORM.MerchantDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Gabana.ORM.MerchantDB.generated.cs</LastGenOutput>
+    </None>
+    <None Update="Gabana.ORM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Gabana.ORM.generated.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "XUnitTestGabana": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\bin\Debug\PrinterClassLib.dll
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\bin\Debug\PrinterClassLib.pdb
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\PrinterClassLib.csproj.AssemblyReference.cache
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\class-parse.rsp
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\PrinterClassLib.csproj.CoreCompileInputs.cache
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\PrinterClassLib.dll
+C:\Users\Cha-Emm\Downloads\BluetoothPrintXamarin-master\BluetoothPrintXamarin-master\PrinterClassLib\obj\Debug\PrinterClassLib.pdb

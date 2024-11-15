@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [],
+      "idiom": "iphone",
+      "filename": "Language.pdf"
+    }
+  ],
+  "properties": {},
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

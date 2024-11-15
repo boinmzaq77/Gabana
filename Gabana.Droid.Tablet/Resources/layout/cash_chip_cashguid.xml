@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.chip.Chip
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/ThemeChip"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:id="@+id/chip_item"
+    app:chipStrokeColor="@color/primary"
+    android:textColor="@color/eclipse"
+    android:textSize="15dp"
+    app:chipCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:chipStrokeWidth="1dp"
+    android:maxLines="1"
+    app:chipBackgroundColor="@android:color/white"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+</android.support.design.chip.Chip>
+    
+    

@@ -1,0 +1,3419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{D813F410-335D-4F17-A9F2-355B4A5C1F5C}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Gabana</RootNamespace>
+    <AssemblyName>Gabana</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <ProvisioningType>manual</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>Apple Development: Suthipong Kaewbor (9DJ968V3M5)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <CodesignKey>Apple Development: Suthipong Kaewbor (9DJ968V3M5)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>EntitlementsDevelopment.plist</CodesignEntitlements>
+    <CodesignKey>Apple Development: Suthipong Kaewbor (9DJ968V3M5)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>
+    </CodesignProvision>
+    <IOSDebugOverWiFi>false</IOSDebugOverWiFi>
+    <MtouchSdkVersion>15.0</MtouchSdkVersion>
+    <MtouchExtraArgs>-v -v -v -v</MtouchExtraArgs>
+    <MtouchFloat32>false</MtouchFloat32>
+    <MtouchNoSymbolStrip>false</MtouchNoSymbolStrip>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>GabanaApp</CodesignProvision>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchSdkVersion>15.2</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BellNotificationHub.Xamarin.iOS">
+      <HintPath>RefLibrary\BellNotificationHub.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper">
+      <Version>10.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="linq2db">
+      <Version>3.1.6</Version>
+    </PackageReference>
+    <PackageReference Include="Microcharts">
+      <Version>0.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http.Polly">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.BLE">
+      <Version>2.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.BluetoothLE">
+      <Version>6.3.0.19</Version>
+    </PackageReference>
+    <PackageReference Include="SeniorSoft.Mobile.Misc">
+      <Version>1.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="SidebarNavigation">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="SkiaSharp">
+      <Version>1.68.3</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Toast.iOS">
+      <Version>1.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net.Mobile">
+      <Version>2.4.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\Add.imageset\Add.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Add.imageset\Add1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Add.imageset\Add2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddCust.imageset\AddCust.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddCust.imageset\AddCust1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddCust.imageset\AddCust2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImg.imageset\AddImg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImg.imageset\AddImg2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImg.imageset\AddImg3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImgItem.imageset\AddImgItem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImgItem.imageset\AddImgItem1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImgItem.imageset\AddImgItem2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddItem.imageset\AddItem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddItem.imageset\AddItem1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddItem.imageset\AddItem2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddNoteCate.imageset\AddNoteCate.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddNoteCate.imageset\AddNoteCate1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddNoteCate.imageset\AddNoteCate3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty.imageset\AddQty.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty.imageset\AddQty1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty.imageset\AddQty2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty1.imageset\AddQty1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty1.imageset\AddQty11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty1.imageset\AddQty12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Album.imageset\Album.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Album.imageset\Album1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Album.imageset\Album2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana1201.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana401.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana402.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana581.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana801.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\gabana87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App1201.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App401.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App402.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App581.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App801.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\App87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons1.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App1201.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App401.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App402.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App581.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App801.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\App87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons2.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\BackB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\BackB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\BackB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackW.imageset\BackW.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackW.imageset\BackW1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackW.imageset\BackW2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackW.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Basket.imageset\Basket1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Basket.imageset\Basket2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Basket.imageset\Basket3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BasketB.imageset\BasketB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BasketB.imageset\BasketB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BasketB.imageset\BasketB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBg.imageset\BillBg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBg.imageset\BillBg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBg.imageset\BillBgLine.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBgLine.imageset\BillBg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBgLine.imageset\BillBgLine.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBgLine.imageset\BillBgLine1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Bills.imageset\Bills.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Bills.imageset\Bills1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Bills.imageset\Bills2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Camera.imageset\Camera.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Camera.imageset\Camera1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Camera.imageset\Camera2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashB.imageset\CashB7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashB.imageset\CashB8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashB.imageset\CashB9.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashG.imageset\CashG3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashG.imageset\CashG4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashG.imageset\CashG5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Check.imageset\Check.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Check.imageset\Check1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Check.imageset\Check2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ClearCart.imageset\ClearCart.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ClearCart.imageset\ClearCart1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ClearCart.imageset\ClearCart2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1.imageset\Color1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1.imageset\Color11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1.imageset\Color12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1B.imageset\Color1B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1B.imageset\Color1B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1B.imageset\Color1B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2.imageset\Color2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2.imageset\Color21.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2.imageset\Color22.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2B.imageset\Color2B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2B.imageset\Color2B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2B.imageset\Color2B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3.imageset\Color3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3.imageset\Color31.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3.imageset\Color32.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3B.imageset\Color3B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3B.imageset\Color3B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3B.imageset\Color3B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4.imageset\Color4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4.imageset\Color41.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4.imageset\Color42.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4B.imageset\Color4B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4B.imageset\Color4B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4B.imageset\Color4B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5.imageset\Color5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5.imageset\Color51.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5.imageset\Color52.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5B.imageset\Color5B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5B.imageset\Color5B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5B.imageset\Color5B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6.imageset\Color6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6.imageset\Color61.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6.imageset\Color62.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6B.imageset\Color6B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6B.imageset\Color6B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6B.imageset\Color6B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7.imageset\Color7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7.imageset\Color71.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7.imageset\Color72.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7B.imageset\Color7B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7B.imageset\Color7B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7B.imageset\Color7B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8.imageset\Color8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8.imageset\Color81.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8.imageset\Color82.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8B.imageset\Color8B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8B.imageset\Color8B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8B.imageset\Color8B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9.imageset\Color9.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9.imageset\Color91.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9.imageset\Color92.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9B.imageset\Color9B.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9B.imageset\Color9B1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9B.imageset\Color9B2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactAddress.imageset\ContactAddress.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactAddress.imageset\ContactAddress1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactAddress.imageset\ContactAddress2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactFb.imageset\ContactFb.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactFb.imageset\ContactFb1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactFb.imageset\ContactFb2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactLine.imageset\ContactLine.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactLine.imageset\ContactLine1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactLine.imageset\ContactLine2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactMail.imageset\ContactMail.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactMail.imageset\ContactMail1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactMail.imageset\ContactMail2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactSns.imageset\ContactSns.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactSns.imageset\ContactSns1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactSns.imageset\ContactSns2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactTel.imageset\ContactTel.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactTel.imageset\ContactTel1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactTel.imageset\ContactTel2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CreditG.imageset\CreditG3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CreditG.imageset\CreditG4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CreditG.imageset\CreditG5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EUR.imageset\Currency-EUR.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EUR.imageset\Currency-EUR2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EUR.imageset\Currency-EUR3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EURg.imageset\Currency-EURg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EURg.imageset\Currency-EURg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EURg.imageset\Currency-EURg2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPY.imageset\Currency-JPY.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPY.imageset\Currency-JPY1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPY.imageset\Currency-JPY2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPYg.imageset\Currency-JPYg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPYg.imageset\Currency-JPYg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPYg.imageset\Currency-JPYg2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-No.imageset\Currency-No.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-No.imageset\Currency-No1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-No.imageset\Currency-No2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-NoG.imageset\Currency-NoG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-NoG.imageset\Currency-NoG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-NoG.imageset\Currency-NoG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THB.imageset\Currency-THB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THB.imageset\Currency-THB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THB.imageset\Currency-THB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THBg.imageset\Currency-THBg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THBg.imageset\Currency-THBg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THBg.imageset\Currency-THBg2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USD.imageset\Currency-USD.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USD.imageset\Currency-USD1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USD.imageset\Currency-USD2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USDg.imageset\Currency-USDg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USDg.imageset\Currency-USDg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USDg.imageset\Currency-USDg2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Cust.imageset\Cust.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Cust.imageset\Cust1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Cust.imageset\Cust2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CustB.imageset\CustB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CustB.imageset\CustB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CustB.imageset\CustB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Customer.imageset\Customer3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Customer.imageset\Customer4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Customer.imageset\Customer5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dashboard.imageset\Dashboard3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dashboard.imageset\Dashboard4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dashboard.imageset\Dashboard5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbAvg.imageset\DbAvg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbAvg.imageset\DbAvg1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbAvg.imageset\DbAvg2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCalendar.imageset\DbCalendar.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCalendar.imageset\DbCalendar1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCalendar.imageset\DbCalendar2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCash.imageset\DbColorCash.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCash.imageset\DbColorCash1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCash.imageset\DbColorCash3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCredit.imageset\DbColorCredit.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCredit.imageset\DbColorCredit1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCredit.imageset\DbColorCredit2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorePay.imageset\DbColorePay.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorePay.imageset\DbColorePay1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorePay.imageset\DbColorePay2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorGift.imageset\DbColorGift.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorGift.imageset\DbColorGift1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorGift.imageset\DbColorGift2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCompare.imageset\DbCompare.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCompare.imageset\DbCompare1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCompare.imageset\DbCompare2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCount.imageset\DbCount.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCount.imageset\DbCount1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCount.imageset\DbCount2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbDown.imageset\DbDown.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbDown.imageset\DbDown1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbDown.imageset\DbDown2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbProfit.imageset\DbProfit.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbProfit.imageset\DbProfit1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbProfit.imageset\DbProfit2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbSales.imageset\DbSales.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbSales.imageset\DbSales1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbSales.imageset\DbSales2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbUp.imageset\DbUp.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbUp.imageset\DbUp1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbUp.imageset\DbUp2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultBillHistory.imageset\DefaultBillHistory.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultBillHistory.imageset\DefaultBillHistory1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultBillHistory.imageset\DefaultBillHistory2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCategory.imageset\DefaultCategory.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCategory.imageset\DefaultCategory1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCategory.imageset\DefaultCategory2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCustomer.imageset\DefaultCustomer.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCustomer.imageset\DefaultCustomer1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCustomer.imageset\DefaultCustomer2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultDashbard.imageset\DefaultDashbard.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultDashbard.imageset\DefaultDashbard1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultDashbard.imageset\DefaultDashbard2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultEmployee.imageset\DefaultEmployee.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultEmployee.imageset\DefaultEmployee1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultEmployee.imageset\DefaultEmployee2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultItem.imageset\DefaultItem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultItem.imageset\DefaultItem1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultItem.imageset\DefaultItem3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultNote.imageset\DefaultNote.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultNote.imageset\DefaultNote1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultNote.imageset\DefaultNote2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultReport.imageset\DefaultReport.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultReport.imageset\DefaultReport1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultReport.imageset\DefaultReport2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultTopping.imageset\DefaultTopping.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultTopping.imageset\DefaultTopping1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultTopping.imageset\DefaultTopping2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del.imageset\Del.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del.imageset\Del1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del.imageset\Del2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del2.imageset\Del2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del2.imageset\Del21.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del2.imageset\Del22.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Delete.imageset\Del.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Delete.imageset\Del1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Delete.imageset\Del2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteBt2.imageset\DeleteBt2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteBt2.imageset\DeleteBt21.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteBt2.imageset\DeleteBt22.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteSize.imageset\DeleteSize.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteSize.imageset\DeleteSize1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteSize.imageset\DeleteSize2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty.imageset\DelQty.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty.imageset\DelQty1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty.imageset\DelQty2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty1.imageset\DelQty1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty1.imageset\DelQty11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty1.imageset\DelQty12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelTxt.imageset\DelTxt.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelTxt.imageset\DelTxt1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelTxt.imageset\DelTxt2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailNotShow.imageset\DetailNotShow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailNotShow.imageset\DetailNotShow1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailNotShow.imageset\DetailNotShow2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailShow.imageset\DetailShow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailShow.imageset\DetailShow1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailShow.imageset\DetailShow2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscItem.imageset\DiscItem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscItem.imageset\DiscItem1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscItem.imageset\DiscItem2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountCart.imageset\DiscountCart.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountCart.imageset\DiscountCart1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountCart.imageset\DiscountCart2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountItem.imageset\DiscountItem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountItem.imageset\DiscountItem1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountItem.imageset\DiscountItem2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dummy.imageset\Dummy3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dummy.imageset\Dummy4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dummy.imageset\Dummy5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminB.imageset\EmpAdminB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminB.imageset\EmpAdminB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminB.imageset\EmpAdminB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminG.imageset\EmpAdminG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminG.imageset\EmpAdminG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminG.imageset\EmpAdminG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierB.imageset\EmpCashierB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierB.imageset\EmpCashierB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierB.imageset\EmpCashierB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierG.imageset\EmpCashierG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierG.imageset\EmpCashierG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierG.imageset\EmpCashierG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorB.imageset\EmpEditorB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorB.imageset\EmpEditorB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorB.imageset\EmpEditorB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorG.imageset\EmpEditorG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorG.imageset\EmpEditorG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorG.imageset\EmpEditorG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerB.imageset\EmpInvoiceOfficerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerB.imageset\EmpInvoiceOfficerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerB.imageset\EmpInvoiceOfficerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerG.imageset\EmpInvoiceOfficerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerG.imageset\EmpInvoiceOfficerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerG.imageset\EmpInvoiceOfficerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Employee.imageset\Employee3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Employee.imageset\Employee4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Employee.imageset\Employee5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmployeeRoles.imageset\EmployeeRoles.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmployeeRoles.imageset\EmployeeRoles1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmployeeRoles.imageset\EmployeeRoles2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerB.imageset\EmpManagerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerB.imageset\EmpManagerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerB.imageset\EmpManagerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerG.imageset\EmpManagerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerG.imageset\EmpManagerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerG.imageset\EmpManagerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerB.imageset\EmpOfficerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerB.imageset\EmpOfficerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerB.imageset\EmpOfficerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerG.imageset\EmpOfficerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerG.imageset\EmpOfficerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerG.imageset\EmpOfficerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerB.imageset\EmpOwnerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerB.imageset\EmpOwnerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerB.imageset\EmpOwnerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerG.imageset\EmpOwnerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerG.imageset\EmpOwnerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerG.imageset\EmpOwnerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminB.imageset\EmpRoleAdminB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminB.imageset\EmpRoleAdminB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminB.imageset\EmpRoleAdminB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminG.imageset\EmpRoleAdminG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminG.imageset\EmpRoleAdminG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminG.imageset\EmpRoleAdminG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierB.imageset\EmpRoleCashierB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierB.imageset\EmpRoleCashierB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierB.imageset\EmpRoleCashierB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierG.imageset\EmpRoleCashierG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierG.imageset\EmpRoleCashierG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierG.imageset\EmpRoleCashierG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorB.imageset\EmpRoleEditorB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorB.imageset\EmpRoleEditorB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorB.imageset\EmpRoleEditorB3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorG.imageset\EmpRoleEditorG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorG.imageset\EmpRoleEditorG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorG.imageset\EmpRoleEditorG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerB.imageset\EmpRoleInvoiceOfficerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerB.imageset\EmpRoleInvoiceOfficerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerB.imageset\EmpRoleInvoiceOfficerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerG.imageset\EmpRoleInvoiceOfficerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerG.imageset\EmpRoleInvoiceOfficerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerG.imageset\EmpRoleInvoiceOfficerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerB.imageset\EmpRoleManagerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerB.imageset\EmpRoleManagerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerB.imageset\EmpRoleManagerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerG.imageset\EmpRoleManagerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerG.imageset\EmpRoleManagerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerG.imageset\EmpRoleManagerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOfficerB.imageset\EmpRoleOfficerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOfficerB.imageset\EmpRoleOfficerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOfficerB.imageset\EmpRoleOfficerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerB.imageset\EmpRoleOwnerB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerB.imageset\EmpRoleOwnerB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerB.imageset\EmpRoleOwnerB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerG.imageset\EmpRoleOwnerG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerG.imageset\EmpRoleOwnerG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerG.imageset\EmpRoleOwnerG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyCart.imageset\EmptyCart.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyCart.imageset\EmptyCart1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyCart.imageset\EmptyCart2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Fav.imageset\Fav.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Fav.imageset\Fav1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Fav.imageset\Fav2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddCust.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Basket.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Add.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Album.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Camera.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Check.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Edit.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Edit.imageset\Edit.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Edit.imageset\Edit1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Edit.imageset\Edit2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Fav.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogIn.imageset\GabanaLogIn6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogIn.imageset\GabanaLogIn7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogIn.imageset\GabanaLogIn8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddImgItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\GabanaMain6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\GabanaMain7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\GabanaMain8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaTxt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Cash.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Credit.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CreditB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyCart.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ePayment.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ePaymentB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Giftvoucher.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GiftvoucherB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ClearCart.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Customer.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountCart.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscountItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Employee.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GiftvoucherG.imageset\GiftvoucherG3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GiftvoucherG.imageset\GiftvoucherG4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GiftvoucherG.imageset\GiftvoucherG5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\History.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dashboard.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\History.imageset\History3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\History.imageset\History4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\History.imageset\History5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CashG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GiftvoucherG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CreditG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ePaymentG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddNoteCate.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_background.imageset\ic_launcher_background.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_background.imageset\ic_launcher_background1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_background.imageset\ic_launcher_background2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_foreground.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_foreground.imageset\ic_launcher_foreground.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_foreground.imageset\ic_launcher_foreground1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_foreground.imageset\ic_launcher_foreground2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ic_launcher_background.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteSize.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelTxt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DelQty1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultNote.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultReport.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultTopping.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCategory.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultCustomer.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultDashbard.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultEmployee.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddQty1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DefaultBillHistory.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOwnerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOwnerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpManagerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpInvoiceOfficerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpEditorB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpCashierG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpAdminB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USDg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THBg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-USD.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-THB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-NoG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPYg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-No.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-JPY.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EURg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Currency-EUR.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color5.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color4.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color3B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color9B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color8.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color7.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Color6B.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactTel.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBgLine.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLater.imageset\PayLater.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLater.imageset\PayLater1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLater.imageset\PayLater2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLater.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Bills.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DiscItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VoidBill.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BillBg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactSns.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactMail.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactLine.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactAddress.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ContactFb.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterB.imageset\PayLaterB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterB.imageset\PayLaterB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterB.imageset\PayLaterB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterG.imageset\PayLaterG.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterG.imageset\PayLaterG1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PayLaterG.imageset\PayLaterG2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode.imageset\PinCode.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode.imageset\PinCode1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode.imageset\PinCode2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode_Gabana.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleOfficerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCompare.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorePay.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCredit.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorGift.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbColorCash.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbAvg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCalendar.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpOfficerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbUp.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbSales.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbProfit.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbCount.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DbDown.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode_Gabana.imageset\PinCode_Gabana.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode_Gabana.imageset\PinCode_Gabana1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PinCode_Gabana.imageset\PinCode_Gabana2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingBranch.imageset\SettingBranch.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingBranch.imageset\SettingBranch1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingBranch.imageset\SettingBranch2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingCurrency.imageset\SettingCurrency.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingCurrency.imageset\SettingCurrency1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingCurrency.imageset\SettingCurrency2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDecimal.imageset\SettingDecimal.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDecimal.imageset\SettingDecimal1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDecimal.imageset\SettingDecimal2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDevice.imageset\SettingDevice.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDevice.imageset\SettingDevice1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDevice.imageset\SettingDevice2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingEmployee.imageset\SettingEmployee.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingEmployee.imageset\SettingEmployee1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingEmployee.imageset\SettingEmployee2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingGiftVoucher.imageset\SettingGiftVoucher.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingGiftVoucher.imageset\SettingGiftVoucher1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingGiftVoucher.imageset\SettingGiftVoucher2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingLinkProMaxx.imageset\SettingLinkProMaxx.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingLinkProMaxx.imageset\SettingLinkProMaxx1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingLinkProMaxx.imageset\SettingLinkProMaxx2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMemberType.imageset\SettingMemberType.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMemberType.imageset\SettingMemberType1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMemberType.imageset\SettingMemberType2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMerchant.imageset\SettingMerchant.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMerchant.imageset\SettingMerchant1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMerchant.imageset\SettingMerchant2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingNote.imageset\SettingNote.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingNote.imageset\SettingNote1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingNote.imageset\SettingNote2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingPrinter.imageset\SettingPrinter.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingPrinter.imageset\SettingPrinter2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingPrinter.imageset\SettingPrinter3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingServiceCharge.imageset\SettingServiceCharge.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingServiceCharge.imageset\SettingServiceCharge1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingServiceCharge.imageset\SettingServiceCharge2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingVat.imageset\SettingVat.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingVat.imageset\SettingVat1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingVat.imageset\SettingVat2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\UserActive.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\UserActive1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\UserActive2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserInactive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmployeeRoles.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DeleteBt2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingVat.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingServiceCharge.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingPrinter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingNote.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMerchant.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingMemberType.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingLinkProMaxx.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingGiftVoucher.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingEmployee.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDecimal.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingDevice.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingCurrency.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleManagerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingBranch.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleInvoiceOfficerB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleEditorG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleCashierG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmpRoleAdminG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangEN.imageset\LangEN.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangEN.imageset\LangEN1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangEN.imageset\LangEN2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangTH.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangEN.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Del2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangTH.imageset\LangTH.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangTH.imageset\LangTH1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LangTH.imageset\LangTH2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuContact.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLanguage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLogout.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPassword.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPolicy.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuVersion.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuContact.imageset\MenuContact.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuContact.imageset\MenuContact1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuContact.imageset\MenuContact2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLanguage.imageset\MenuLanguage.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLanguage.imageset\MenuLanguage1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLanguage.imageset\MenuLanguage2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLogout.imageset\MenuLogout.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLogout.imageset\MenuLogout1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuLogout.imageset\MenuLogout2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPassword.imageset\MenuPassword.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPassword.imageset\MenuPassword1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPassword.imageset\MenuPassword2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPolicy.imageset\MenuPolicy.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPolicy.imageset\MenuPolicy1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuPolicy.imageset\MenuPolicy2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuVersion.imageset\MenuVersion.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuVersion.imageset\MenuVersion1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MenuVersion.imageset\MenuVersion2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PaymentQr.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PaymentQrB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PaymentQrG.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Item.imageset\Item6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Item.imageset\Item7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Item.imageset\Item8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PaymentQrG.imageset\PaymentQrG3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PaymentQrG.imageset\PaymentQrG4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PaymentQrG.imageset\PaymentQrG5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\POS.imageset\POS3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\POS.imageset\POS4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\POS.imageset\POS5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\QRSetting.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\QRSetting.imageset\QRSetting3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\QRSetting.imageset\QRSetting4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\QRSetting.imageset\QRSetting5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\quantityX.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Menu.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Menu.imageset\Menu.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Menu.imageset\Menu1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Menu.imageset\Menu2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Minus.imageset\Minus3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity1.imageset\Quantity1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity1.imageset\Quantity11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity1.imageset\Quantity12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\quantityX.imageset\quantityX1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\quantityX.imageset\quantityX2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\quantityX.imageset\quantityX3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioCheck.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Remark.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioBlank.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Price.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Print.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionCheck.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionBlank.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Option.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoteTopping.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Next.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Next.imageset\Next.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Next.imageset\Next1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Next.imageset\Next2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoteTopping.imageset\NoteTopping.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoteTopping.imageset\NoteTopping1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoteTopping.imageset\NoteTopping2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Option.imageset\Option.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Option.imageset\Option1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Option.imageset\Option2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionBlank.imageset\OptionBlank.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionBlank.imageset\OptionBlank1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionBlank.imageset\OptionBlank2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionCheck.imageset\OptionCheck.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionCheck.imageset\OptionCheck1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OptionCheck.imageset\OptionCheck2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Price.imageset\Price.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Price.imageset\Price1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Price.imageset\Price2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Print.imageset\Print.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Print.imageset\Print1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Print.imageset\Print2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity.imageset\Quantity1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity.imageset\Quantity2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Quantity.imageset\Quantity3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioBlank.imageset\RadioBlank.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioBlank.imageset\RadioBlank1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioBlank.imageset\RadioBlank2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioCheck.imageset\RadioCheck.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioCheck.imageset\RadioCheck1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RadioCheck.imageset\RadioCheck2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Remark.imageset\Remark.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Remark.imageset\Remark1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Remark.imageset\Remark2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report.imageset\Report3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report.imageset\Report4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report.imageset\Report5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ScanItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddItem.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorYellow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Minus.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ScanItem.imageset\ScanItem.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ScanItem.imageset\ScanItem1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ScanItem.imageset\ScanItem2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Setting.imageset\Setting5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Setting.imageset\Setting6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Setting.imageset\Setting7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Unfav.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorRed.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorRed.imageset\IndicatorRed.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorRed.imageset\IndicatorRed1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorRed.imageset\IndicatorRed2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorYellow.imageset\IndicatorYellow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorYellow.imageset\IndicatorYellow1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\IndicatorYellow.imageset\IndicatorYellow2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Minus.imageset\Minus1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Minus.imageset\Minus2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Search.imageset\Search.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Search.imageset\Search1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Search.imageset\Search2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\Trash.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\Trash1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\Trash2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Unfav.imageset\Unfav.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Unfav.imageset\Unfav1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Unfav.imageset\Unfav2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserInactive.imageset\UserInactive.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserInactive.imageset\UserInactive1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserInactive.imageset\UserInactive2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewList.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Search.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BasketB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Cust.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CustB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailNotShow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\DetailShow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Dummy.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewGroup.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LogOut.imageset\LogOut3.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PoweredBySNS.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Setting.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Setting.imageset\Setting4.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Tel.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Username.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogIn.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Item.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LogOut.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MerchantId.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OTP.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Password.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\POS.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LogOut.imageset\LogOut.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LogOut.imageset\LogOut1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LogOut.imageset\LogOut2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MerchantId.imageset\MerchantId1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MerchantId.imageset\MerchantId2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MerchantId.imageset\MerchantId3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OTP.imageset\OTP.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OTP.imageset\OTP1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\OTP.imageset\OTP2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Password.imageset\Password.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Password.imageset\Password1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Password.imageset\Password2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PoweredBySNS.imageset\PoweredBySNS.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PoweredBySNS.imageset\PoweredBySNS1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\PoweredBySNS.imageset\PoweredBySNS2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Tel.imageset\Tel.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Tel.imageset\Tel1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Tel.imageset\Tel2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Username.imageset\Username.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Username.imageset\Username1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Username.imageset\Username2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewGroup.imageset\ViewGroup1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewGroup.imageset\ViewGroup2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewGroup.imageset\ViewGroup3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewList.imageset\ViewList.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewList.imageset\ViewList1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ViewList.imageset\ViewList2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VoidBill.imageset\VoidBill.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VoidBill.imageset\VoidBill1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VoidBill.imageset\VoidBill2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BackB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EntitlementsDevelopment.plist" />
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <BundleResource Include="Resources\gabanaL.db" />
+    <BundleResource Include="Resources\PoolDB.db" />
+    <BundleResource Include="Resources\PoolDBT4.db" />
+    <BundleResource Include="Resources\MerchantDB.db" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSetting\ChangeBranchDataSource.cs" />
+    <Compile Include="AppSetting\ChangeBranchController.cs" />
+    <Compile Include="AppSetting\TermSettingController.cs" />
+    <Compile Include="BellNotificationHelper.cs" />
+    <Compile Include="BillHistory\BillHistoryDetailCollectionViewCell.cs" />
+    <Compile Include="BillHistory\BillHistoryDetailDataSource.cs" />
+    <Compile Include="BillHistory\SubBillHistoryCollectionDelegate.cs" />
+    <Compile Include="BillHistory\SubBillDateDataSource.cs" />
+    <Compile Include="BillHistory\BillHistoryController.cs" />
+    <Compile Include="BillHistory\BillHistoryCollectionDelegate.cs" />
+    <Compile Include="BillHistory\BillhistoryCollectionViewCell.cs" />
+    <Compile Include="BillHistory\BillDateDataSource.cs" />
+    <Compile Include="BillHistory\BillListViewCell.cs" />
+    <Compile Include="BillHistory\ReceiptHistoryDetailController.cs" />
+    <Compile Include="CreditManager.cs" />
+    <Compile Include="CustomPaymentObserver.cs" />
+    <Compile Include="InAppPurchaseManager.cs" />
+    <Compile Include="PurchaseManager.cs" />
+    <Compile Include="Testpay.cs" />
+    <Compile Include="BranchmainCollectionDelegate.cs" />
+    <Compile Include="BranchCollectionDelegate.cs" />
+    <Compile Include="BranchCollectionViewCell.cs" />
+    <Compile Include="BranchController.cs" />
+    <Compile Include="BranchDataSource.cs" />
+    <Compile Include="Customer\POSCustomerCollectionDelegate.cs" />
+    <Compile Include="Customer\POSCustomerDataSource.cs" />
+    <Compile Include="Customer\POSCustomerCollectionViewCell.cs" />
+    <Compile Include="Customer\POSCustomerController.cs" />
+    <Compile Include="DashBoard\DashBoardBranchController.cs" />
+    <Compile Include="DashBoard\DashBoardChooseBranchCollectionDelegate.cs" />
+    <Compile Include="DashBoard\DashboardChooseBranchDataSource.cs" />
+    <Compile Include="DashBoard\DashboardChooseBranchViewCell.cs" />
+    <Compile Include="DashBoard\BestSellingItemViewCell.cs" />
+    <Compile Include="DashBoard\BestSellingItemDataSource.cs" />
+    <Compile Include="Employee\EmployeeChooseBranchCollectionDelegate.cs" />
+    <Compile Include="Employee\EmployeeChooseBranchController.cs" />
+    <Compile Include="Employee\EmployeeChooseBranchDataSource.cs" />
+    <Compile Include="Employee\EmployeeChooseBranchViewCell.cs" />
+    <Compile Include="Employee\EmployeeCollectionDelegate.cs" />
+    <Compile Include="GabanaShowImage.cs" />
+    <Compile Include="ITEMS\ItemStockOnHandController.cs" />
+    <Compile Include="ITEMS\ItemStock\CellItemStockList.cs" />
+    <Compile Include="ITEMS\ItemStock\ItemStockCollectionDelegate.cs" />
+    <Compile Include="ITEMS\ItemStock\ItemStockDataSourceList.cs" />
+    <Compile Include="ITEMS\MenuItemBarCollectionDelegate.cs" />
+    <Compile Include="ITEMS\Stock\StockCollectionDelegate.cs" />
+    <Compile Include="ITEMS\Stock\StockCollectionViewCell.cs" />
+    <Compile Include="ITEMS\Stock\StockDataSource.cs" />
+    <Compile Include="ITEMS\Stock\StockMovementController.cs" />
+    <Compile Include="MyQr\MyQrPayController.cs" />
+    <Compile Include="MyQr\MYQRCollectionViewCellList.cs" />
+    <Compile Include="MyQr\MYQRDataSourceList.cs" />
+    <Compile Include="MyQr\MyQrController.cs" />
+    <Compile Include="PinCodeController.cs" />
+    <Compile Include="POS\Cart\Change\ChangeCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\Change\ChangeCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\Change\ChangeDataSource.cs" />
+    <Compile Include="POS\Cart\Order\OrderCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\Order\OrderCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\Order\OrderController.cs" />
+    <Compile Include="POS\Cart\Order\OrderDataSource.cs" />
+    <Compile Include="POS\Cart\SaveOrderController.cs" />
+    <Compile Include="POS\Gilfvoucher\GiftVoucherPayCollectionDelegate.cs" />
+    <Compile Include="POS\Gilfvoucher\GiftVoucherPayDataSource.cs" />
+    <Compile Include="POS\Gilfvoucher\GiftVoucherPayController.cs" />
+    <Compile Include="POS\Gilfvoucher\GiftVoucherPayViewCell.cs" />
+    <Compile Include="POS\ItemPOSCollectionViewCellListAdd.cs" />
+    <Compile Include="POS\Receipt\ToppingReceiptCollectionViewCell.cs" />
+    <Compile Include="POS\Receipt\ToppingReceiptDataSource.cs" />
+    <Compile Include="Print\BluetoothCollectionDelegate.cs" />
+    <Compile Include="Print\BlueToothController.cs" />
+    <Compile Include="Print\BlueToothDataSource.cs" />
+    <Compile Include="Print\BluetoothViewCellSetting.cs" />
+    <Compile Include="Print\CreateImageIOS.cs" />
+    <Compile Include="Print\DumpView.cs" />
+    <Compile Include="Print\EscPosCommand.cs" />
+    <Compile Include="Report\CategoryReport\CategoryDataSource.cs" />
+    <Compile Include="Report\CategoryReport\ReportCategoryDataSource.cs" />
+    <Compile Include="Report\CategoryReport\ReportCategoryCollectionDelegate.cs" />
+    <Compile Include="Report\CategoryReport\ReportChooseCategoryViewCell.cs" />
+    <Compile Include="Report\CategoryReport\ReportFilterController.cs" />
+    <Compile Include="Report\CategoryReport\ReportSelectCategoryController.cs" />
+    <Compile Include="Report\CategoryReport\CategoryReportDetailController.cs" />
+    <Compile Include="Report\CustomerReport\CustomerReportSelectDataSource.cs" />
+    <Compile Include="Report\CustomerReport\CustomerReportController.cs" />
+    <Compile Include="Report\CustomerReport\CustomerReportDetailController.cs" />
+    <Compile Include="Report\CustomerReport\CustomerReportDataViewCell.cs" />
+    <Compile Include="Report\CustomerReport\ReportCustomerCollectionDelegate.cs" />
+    <Compile Include="Report\CustomerReport\ReportCustomerDataSource.cs" />
+    <Compile Include="Report\CustomerReport\ReportChooseCustomerViewCell.cs" />
+    <Compile Include="Report\CustomerReport\ReportSelectCustomerController.cs" />
+    <Compile Include="Report\EmployeeReport\ItemTopSaleReportDataViewCell.cs" />
+    <Compile Include="Report\EmployeeReport\EmployeeReportController.cs" />
+    <Compile Include="Report\EmployeeReport\EmployeeReportDataViewCell.cs" />
+    <Compile Include="Report\EmployeeReport\EmployeeReportDetailController.cs" />
+    <Compile Include="Report\EmployeeReport\EmployeeReportSelectDataSource.cs" />
+    <Compile Include="Report\EmployeeReport\ReportChooseEmployeeViewCell.cs" />
+    <Compile Include="Report\EmployeeReport\ReportEmployeeCollectionDelegate.cs" />
+    <Compile Include="Report\EmployeeReport\ReportEmployeeDataSource.cs" />
+    <Compile Include="Report\EmployeeReport\ReportSelectEmployeeController.cs" />
+    <Compile Include="Report\ItemStockReport\CatagoryReportViewCell.cs" />
+    <Compile Include="Report\ItemStockReport\CatagoeyReportDataSource.cs" />
+    <Compile Include="Report\ItemStockReport\CatagoryReportCollectionDelegate.cs" />
+    <Compile Include="Report\ItemStockReport\ItemStockReportDataSource.cs" />
+    <Compile Include="Report\ItemStockReport\ItemStockReportCollectionDelegate.cs" />
+    <Compile Include="Report\ItemStockReport\ItemStockReportViewCell.cs" />
+    <Compile Include="Report\ItemStockReport\ItemsStockReportController.cs" />
+    <Compile Include="Report\ItemStockReport\ItemStockReportDetailController.cs" />
+    <Compile Include="Report\ItemStockReport\ReportItemStockDataSource.cs" />
+    <Compile Include="Report\ItemTopSaleReport\ReportItemTopSaleDataSource.cs" />
+    <Compile Include="Report\ItemTopSaleReport\ItemTopSaleReportController.cs" />
+    <Compile Include="Report\ItemTopSaleReport\TopSaleReportDetailController.cs" />
+    <Compile Include="Report\PaymentTypeReport\PaymentTypeReportController.cs" />
+    <Compile Include="Report\PaymentTypeReport\PaymentReportDataViewCell.cs" />
+    <Compile Include="Report\PaymentTypeReport\PaymentReportDetailController.cs" />
+    <Compile Include="Report\PaymentTypeReport\PaymentReportSelectDataSource.cs" />
+    <Compile Include="Report\PaymentTypeReport\ReportChoosePaymentViewCell.cs" />
+    <Compile Include="Report\PaymentTypeReport\ReportPaymentDataSource.cs" />
+    <Compile Include="Report\PaymentTypeReport\ReportPaymentCollectionDelegate.cs" />
+    <Compile Include="Report\PaymentTypeReport\ReportSelectPaymentController.cs" />
+    <Compile Include="Report\ProfitReport\ProfitReportController.cs" />
+    <Compile Include="Report\CategoryReport\CategoryReportController.cs" />
+    <Compile Include="Report\ProfitReport\ProfitReportTodayController.cs" />
+    <Compile Include="Report\ProfitReport\ProfitReportMonthController.cs" />
+    <Compile Include="Report\ProfitReport\ProfitReportYearController.cs" />
+    <Compile Include="Report\ReportBranchController.cs" />
+    <Compile Include="Report\ReportChooseBranchCollectionDelegate.cs" />
+    <Compile Include="Report\ReportChooseBranchDataSource.cs" />
+    <Compile Include="Report\ReportChooseBranchViewCell.cs" />
+    <Compile Include="Report\ReportController.cs" />
+    <Compile Include="Report\SaleReport\HourSaleViewCell.cs" />
+    <Compile Include="Report\SaleReport\ReportSaleMonthlyDataSource.cs" />
+    <Compile Include="Report\SaleReport\ReportSaleWeeklyDataSource.cs" />
+    <Compile Include="Report\SaleReport\ReportSaleDailyDataSource.cs" />
+    <Compile Include="Report\SaleReport\ReportSaleHourlyDataSource.cs" />
+    <Compile Include="Report\SaleReport\SaleReportYearController.cs" />
+    <Compile Include="Report\SaleReport\SaleReportMonthController.cs" />
+    <Compile Include="Report\SaleReport\SaleReportTodayController.cs" />
+    <Compile Include="Report\SaleReport\SaleReportController.cs" />
+    <Compile Include="Setting\BillSetting\AddMyQrController.cs" />
+    <Compile Include="Setting\BillSetting\AddGiftVoucherController.cs" />
+    <Compile Include="Setting\BillSetting\QrcodeChooseBranchCollectionDelegate.cs" />
+    <Compile Include="Setting\BillSetting\QrcodeChooseBranchController.cs" />
+    <Compile Include="Setting\BillSetting\QrcodeChooseBranchDataSource.cs" />
+    <Compile Include="Setting\BillSetting\QrcodeChooseBranchViewCell.cs" />
+    <Compile Include="Setting\BillSetting\GiftVoucherCollectionDelegate.cs" />
+    <Compile Include="Setting\BillSetting\MyQrSettingController.cs" />
+    <Compile Include="Setting\DeviceSetting\PrinterDataSource.cs" />
+    <Compile Include="Setting\DeviceSetting\PrinterCollectionDelegate.cs" />
+    <Compile Include="Employee\EmployeeDataSource.cs" />
+    <Compile Include="Employee\UpdateEmployeeController.cs" />
+    <Compile Include="Employee\EmployeeRoleController.cs" />
+    <Compile Include="Employee\EmployeeViewCell.cs" />
+    <Compile Include="Employee\EmployeeController.cs" />
+    <Compile Include="Employee\AddEmployeeController.cs" />
+    <Compile Include="GabanaLoading.cs" />
+    <Compile Include="Hold.cs" />
+    <Compile Include="ITEMS\AddItemControllerScroll.cs" />
+    <Compile Include="ITEMS\CellItemToppingList.cs" />
+    <Compile Include="ITEMS\ItemExtraToppingCollectionDelegate.cs" />
+    <Compile Include="ITEMS\CellItemList.cs" />
+    <Compile Include="ITEMS\ItemDataSourceList.cs" />
+    <Compile Include="ITEMS\ItemCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\CartDummyController.cs" />
+    <Compile Include="POS\Cart\CartQuantityController.cs" />
+    <Compile Include="ITEMS\ItemToppingCollectionViewCellList.cs" />
+    <Compile Include="POS\Cart\Option\OptionToppingCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\Option\OptionNoteCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\Option\MenuNoteDataSource.cs" />
+    <Compile Include="POS\Cart\Option\MenuToppingDataSource.cs" />
+    <Compile Include="POS\Cart\Option\OptionNoteDataSource.cs" />
+    <Compile Include="POS\Cart\Option\OptionToppingDataSource.cs" />
+    <Compile Include="POS\Cart\Option\OptionToppingCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\Option\OptionSizeDetailDataSource.cs" />
+    <Compile Include="POS\Cart\Option\OptionSizeCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\Option\OptionController.cs" />
+    <Compile Include="POS\Cart\Option\OptionNoteCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\ToppingCart\ToppingCartCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\ToppingCart\ToppingCartDataSource.cs" />
+    <Compile Include="Setting\BillSetting\CurrencyCollectionDelegate.cs" />
+    <Compile Include="Setting\BillSetting\DecimalDetailController.cs" />
+    <Compile Include="Setting\BillSetting\GiftVoucherDataSource.cs" />
+    <Compile Include="Setting\BillSetting\GiftVoucherViewCell.cs" />
+    <Compile Include="Setting\BillSetting\GiftVoucherSettingController.cs" />
+    <Compile Include="Setting\BillSetting\CurrencyViewCell.cs" />
+    <Compile Include="Setting\BillSetting\CurrencyDataSource.cs" />
+    <Compile Include="Setting\BillSetting\CurrencyController.cs" />
+    <Compile Include="Setting\BillSetting\DecimalController.cs" />
+    <Compile Include="Setting\BillSetting\ServiceChargeController.cs" />
+    <Compile Include="Setting\BillSetting\VatSettingController.cs" />
+    <Compile Include="Setting\DeviceSetting\BluetoothViewCell.cs" />
+    <Compile Include="Setting\DeviceSetting\PrinterSettingController.cs" />
+    <Compile Include="Setting\DeviceSetting\DeviceSettingController.cs" />
+    <Compile Include="Setting\ItemSetting\itemNoteController.cs" />
+    <Compile Include="Setting\ItemSetting\itemDiscountController.cs" />
+    <Compile Include="Setting\ItemSetting\ItemNoteCollectionDelegate.cs" />
+    <Compile Include="ITEMS\ItemSubNoteDataSource.cs" />
+    <Compile Include="ITEMS\SubNoteCollectionViewCell.cs" />
+    <Compile Include="ITEMS\ExtraSizeCollectionViewCell.cs" />
+    <Compile Include="ITEMS\ItemExtraSizeDetailDataSource.cs" />
+    <Compile Include="POS\Receipt\ReceiptCollectionDelegate.cs" />
+    <Compile Include="POS\Receipt\ReceiptCollectionViewCell.cs" />
+    <Compile Include="POS\Receipt\ReceiptDataSource.cs" />
+    <Compile Include="AppSetting\ChangePasswordController.cs" />
+    <Compile Include="AppSetting\LanguageSettingController.cs" />
+    <Compile Include="AppSetting\SeniorContactController.cs" />
+    <Compile Include="Setting\ItemSetting\ItemNoteCategoryDataSource.cs" />
+    <Compile Include="Setting\ItemSetting\NoteMenuCollectionDelegate.cs" />
+    <Compile Include="Setting\ItemSetting\NoteMenuCollectionViewCell.cs" />
+    <Compile Include="Setting\MemberSetting\MemberTypeSettingCollectionDelegate.cs" />
+    <Compile Include="Setting\MemberSetting\MemberTypeSettingController.cs" />
+    <Compile Include="Setting\MemberSetting\MemberTypeSettingDataSource.cs" />
+    <Compile Include="Setting\MemberSetting\MemberTypeSettingViewCell.cs" />
+    <Compile Include="Setting\MemberSetting\AddMemberTypeSettingController.cs" />
+    <Compile Include="Setting\MerchantSetting\AddBranchController.cs" />
+    <Compile Include="Setting\MerchantSetting\BranchSettingController.cs" />
+    <Compile Include="Setting\MerchantSetting\BranchSettingDataSource.cs" />
+    <Compile Include="Setting\MerchantSetting\BranchSettingCollectionDelegate.cs" />
+    <Compile Include="Setting\MerchantSetting\EmployeeManageDataSource.cs" />
+    <Compile Include="Setting\MerchantSetting\EmployeeManagementController.cs" />
+    <Compile Include="Setting\MerchantSetting\BranchSettingViewCell.cs" />
+    <Compile Include="Setting\MerchantSetting\EmployeeManageViewCell.cs" />
+    <Compile Include="Setting\MerchantSetting\MerchantSettingController.cs" />
+    <Compile Include="Setting\MerchantSetting\QRSettingCollectionDelegate.cs" />
+    <Compile Include="Setting\SettingController.cs" />
+    <Compile Include="SidebarMenuController.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="Customer\CustomerCollectionDelegate.cs" />
+    <Compile Include="Customer\CustomerCollectionViewCell.cs" />
+    <Compile Include="Customer\CustomerDataSource.cs" />
+    <Compile Include="Customer\CustomerController.cs" />
+    <Compile Include="Customer\UpdateCustomerController.cs" />
+    <Compile Include="DataCaching.cs" />
+    <Compile Include="Setting\ItemSetting\ItemDiscountCollectionDelegate.cs" />
+    <Compile Include="Setting\ItemSetting\itemNoteCollectionViewCellList.cs" />
+    <Compile Include="ITEMS\CategoryCollectionViewCell.cs" />
+    <Compile Include="ITEMS\CategoryItemDataSource.cs" />
+    <Compile Include="ITEMS\CategoryItemCollectionDelegate.cs" />
+    <Compile Include="ITEMS\ItemsAddToppingController.cs" />
+    <Compile Include="ITEMS\ItemToppingDataSourceList.cs" />
+    <Compile Include="Setting\ItemSetting\ItemNoteDataSourceList.cs" />
+    <Compile Include="Setting\ItemSetting\ItemDiscountDataSourceList.cs" />
+    <Compile Include="Setting\ItemSetting\itemDiscountCollectionViewCellList.cs" />
+    <Compile Include="ITEMS\itemCatagoryCollectionViewCellList.cs" />
+    <Compile Include="ITEMS\ItemCatagoeyDataSourceList.cs" />
+    <Compile Include="ITEMS\ItemCatagoryCollectionDelegate.cs" />
+    <Compile Include="Setting\ItemSetting\ItemsAddNoteController.cs" />
+    <Compile Include="Setting\ItemSetting\ItemsAddDiscountController.cs" />
+    <Compile Include="ITEMS\ItemsAddCategoryController.cs" />
+    <Compile Include="ITEMS\MenuItemDataSource.cs" />
+    <Compile Include="ITEMS\ItemMenuCollectionDelegate.cs" />
+    <Compile Include="ITEMS\MenuCollectionViewCell.cs" />
+    <Compile Include="JobQueue\JobQueue.cs" />
+    <Compile Include="LoginNavigationController.cs" />
+    <Compile Include="LoginNavigationController.designer.cs">
+      <DependentUpon>LoginNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\Cart\CartFooterCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\CartController.cs" />
+    <Compile Include="POS\Cart\CartCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\CartCollectionViewCell.cs" />
+    <Compile Include="POS\Cart\CartDataSource.cs" />
+    <Compile Include="POS\Cart\DiscountController.cs" />
+    <Compile Include="POS\Receipt\ReceiptController.cs" />
+    <Compile Include="POS\Cart\RemarkController.cs" />
+    <Compile Include="POS\Cart\Change\ChangeController.cs" />
+    <Compile Include="POS\Cart\CheckOutMenuController.cs" />
+    <Compile Include="POS\Cart\PaymentController.cs" />
+    <Compile Include="POS\Cart\CashController.cs" />
+    <Compile Include="POS\POSDetailItemController.cs" />
+    <Compile Include="POS\POSScanBarcodeController.cs" />
+    <Compile Include="TestCol\CartCollectionDelegate.cs" />
+    <Compile Include="POS\Cart\CartCollectionViewCell3.cs" />
+    <Compile Include="TestCol\CartCollectionViewCell2.cs" />
+    <Compile Include="TestCol\CartDataSource2.cs" />
+    <Compile Include="TestCol\TestCollection.cs" />
+    <Compile Include="UpdateNavigationController.cs" />
+    <Compile Include="UpdateNavigationController.designer.cs">
+      <DependentUpon>UpdateNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainNavigationController.cs" />
+    <Compile Include="MainNavigationController.designer.cs">
+      <DependentUpon>MainNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\MenuBarCollectionViewLayout.cs" />
+    <Compile Include="SplashLoadingController.cs" />
+    <Compile Include="Test\MainTest.cs" />
+    <Compile Include="DashBoard\DashBoardController.cs" />
+    <Compile Include="UpdatProfileController.cs" />
+    <Compile Include="ITEMS\ItemsController.cs" />
+    <Compile Include="LocalDBTransaction.cs" />
+    <Compile Include="MainController.cs" />
+    <Compile Include="LoginOTPController.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MainMenuCollectionViewCell.cs" />
+    <Compile Include="MainMenuCollectionDelegate.cs" />
+    <Compile Include="MainMenuDataSource.cs" />
+    <Compile Include="POS\ItemPOSListCollectionDelegate.cs" />
+    <Compile Include="POS\ItemPOSCollectionViewCellList.cs" />
+    <Compile Include="POS\ItemPosDataSourceList.cs" />
+    <Compile Include="POS\ItemPosDataSource.cs" />
+    <Compile Include="POS\ItemPOSCollectionDelegate.cs" />
+    <Compile Include="POS\POSDummyController.cs" />
+    <Compile Include="POS\POSMenuCollectionDelegate.cs" />
+    <Compile Include="POS\ItemPOSCollectionViewCell.cs" />
+    <Compile Include="POS\POSMenuCollectionViewCell.cs" />
+    <Compile Include="POS\MenuPosDataSource.cs" />
+    <Compile Include="POS\POSController.cs" />
+    <Compile Include="POS\POSQuantityController.cs" />
+    <Compile Include="SceneDelegate.cs" />
+    <Compile Include="LoginController.cs" />
+    <Compile Include="UserNotificationCenterDelegate.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WaitController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GabanaLogIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MerchantId.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconscan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\POS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gabana3.Share\Gababa3.DataModel\Gabana3.DataModel.csproj">
+      <Project>{bed63284-6a9d-4dd4-b6b2-09c92f9f077a}</Project>
+      <Name>Gabana3.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gabana3.Share\Gabana.ORM\Gabana.ORM.csproj">
+      <Project>{50958831-5648-43b4-b007-059d4583a017}</Project>
+      <Name>Gabana.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Gabana3.Share\Gabana3.JAM\Gabana3.JAM.csproj">
+      <Project>{cb5f16d6-df34-4208-804b-371c42801949}</Project>
+      <Name>Gabana3.JAM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SeAuth2API\SeAuth2.ORM\SeAuth2.ORM.csproj">
+      <Project>{558731db-fd32-4063-ab76-664df197027f}</Project>
+      <Name>SeAuth2.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TinyInsights\TinyInsights.ApplicationInsights\TinyInsights.ApplicationInsights.csproj">
+      <Project>{3b8c393a-f438-4e4b-a5fc-c571379c2387}</Project>
+      <Name>TinyInsights.ApplicationInsights</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gabana.Model\Gabana.Model.csproj">
+      <Project>{2c4b3b46-484b-41c2-98fd-2af5f75c43c3}</Project>
+      <Name>Gabana.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gabana.ORM.MerchantDB\Gabana.ORM.MerchantDB.csproj">
+      <Project>{e3bb1025-ddee-4fa9-afa8-698d033b52a8}</Project>
+      <Name>Gabana.ORM.MerchantDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gabana.ORM.PoolDB\Gabana.ORM.PoolDB.csproj">
+      <Project>{b7eb1e2d-4f81-4206-8384-c34f80092fe9}</Project>
+      <Name>Gabana.ORM.PoolDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gabana.ShareSource\Gabana.ShareSource.csproj">
+      <Project>{901129af-560d-4291-902e-3cdb873dad30}</Project>
+      <Name>Gabana.ShareSource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MainCUSTOMER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\NoMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\searchblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AddItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GabanaTxt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DeleteBt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ProvinceGB.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\defaultcust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentQr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Giftvoucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Credit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\QRSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PincodeDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentSaveOrder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentQRWeChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentQRCredit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentQRCash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentGiftVoucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentCredit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PaymentCash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryQR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpOwnerB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpOfficerB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpManagerB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpInvoiceOfficerB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpEditorB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpCashierB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EmpAdminB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DefaultMyQR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StockDecrease.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StockIncrease.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SortZa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReportFilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SortAz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReportItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReportSale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ReportBulleted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DbCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BillShare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BillVoid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\VoidText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BillMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BillPdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BillPrint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoDefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SortDESC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SortASC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gabana-loading-final-512x512.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GabanaTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DefaultDashbard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\GabanaTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SettingmyQR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DefaultGiftVoucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ScanItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BluetoothB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BluetoothG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DeleteSize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DefaultCustomer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DelTxt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\DefaultBillHistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\App.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PoweredBySNS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoGiftory.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarGabanaiOSHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

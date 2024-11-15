@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CACACA"
+        card_view:cardElevation="1dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardUseCompatPadding="false">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageColor"
+                android:layout_marginLeft="5dp"
+                android:background="@color/textorange"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_vertical"
+                android:layout_height="12dp"
+                android:layout_width="12dp"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:id="@+id/txtType"
+                android:textColor="@color/textblackcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:background="@android:color/transparent"
+                android:id="@+id/txtPercent"
+                android:textColor="@color/textblackcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

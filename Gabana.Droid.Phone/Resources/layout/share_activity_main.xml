@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1" />
+     
+        <LinearLayout        
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linearBtnEarningOrange"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="horizontal"            
+            android:background="#0FEAB5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearPayment">
+            <ImageButton
+                android:src="@mipmap/backw"
+                android:layout_width="30dp"
+                android:layout_gravity="start"
+                android:background="@drawable/abc_btn_borderless_material"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageShare" />
+                <TextView
+                android:text="Share"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_height="match_parent"
+                android:id="@+id/textShare" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

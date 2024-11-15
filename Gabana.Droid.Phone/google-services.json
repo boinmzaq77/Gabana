@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "645185440306",
+    "project_id": "gabana-6f3a1",
+    "storage_bucket": "gabana-6f3a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645185440306:android:bfc59b7ab8411d44148a2b",
+        "android_client_info": {
+          "package_name": "com.seniorsoft.Gabana3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645185440306-otuabuiot0jbg4277m3rrqvv2ucmq9t3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTPeweLlD84OvxwmPLCZ0_PmF5JYe2PrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645185440306-otuabuiot0jbg4277m3rrqvv2ucmq9t3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

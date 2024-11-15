@@ -1,0 +1,10 @@
+IsIncrementalBuild=false
+IsLocal=False
+EnableLLVM=False
+UseConcurrentGC=true
+LinkerBehavior=None
+AdditionalSupportedEncodings=
+HttpClientImplementation=NSUrlSessionHandler
+SupportedArchitectures=ARM64
+BuildConfiguration=Debug
+TemplateName={f1d599d5-32e4-4ac3-bfce-fa91478e30e4}

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.chip.Chip
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeChip"
+    android:id="@+id/chip_item"
+    app:chipBackgroundColor="@android:color/white"
+    app:chipStrokeColor="@color/primary"
+    android:textColor="@color/primary"
+    android:layout_width="wrap_content"   
+    app:chipCornerRadius="5dp"
+    app:chipStrokeWidth="1dp"
+    android:layout_height="wrap_content">
+</android.support.design.chip.Chip>
+    
+    

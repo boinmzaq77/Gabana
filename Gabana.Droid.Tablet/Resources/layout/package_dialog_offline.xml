@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:gravity="center_vertical"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:id="@+id/textUsepoint"
+            android:textColor="@color/eclipse"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_dialog_main"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/whitesmoke"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btn_save"
+            android:textColor="@color/primaryDark"
+            android:layout_weight="0.6"
+            android:background="@android:color/transparent"
+            android:text="@string/textok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

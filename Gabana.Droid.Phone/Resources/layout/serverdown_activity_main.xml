@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:theme="@style/AppTheme.Main"
+    android:windowSoftInputMode="adjustResize">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/gabanalogin"/>
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/gabanatxt"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@mipmap/gabanaserverdown"
+                android:layout_width="300dp"
+                android:layout_height="175dp"/>
+            <TextView
+                android:textColor="@color/textblackcolor"
+                android:layout_marginTop="16dp"
+                android:text="ระบบขัดข้อง กรุณาลองใหม่ภายหลัง"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:layout_marginTop="28dp"
+                android:src="@mipmap/Reconnect"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:id="@+id/btnReconnect"
+                android:background="@android:color/transparent"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+           
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout3">
+            <ImageView
+                android:layout_gravity = "center"
+                android:src="@mipmap/PoweredBySNS"
+                android:layout_width="220dp"
+                android:layout_height="70dp"/>
+            <TextView
+                android:layout_marginTop="-20dp"
+                android:id="@+id/textVersion"
+                android:textSize="10dp"
+                android:textColor="@color/textblackcolor"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCategoryItem"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <FrameLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:contentDescription="@string/abc_searchview_description_search"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/search"
+                android:id="@+id/btnSearch"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <EditText
+            android:layout_marginLeft="60dp"
+            android:background="@android:color/transparent"
+            android:inputType="textAutoCorrect"
+            android:textColor="@color/primaryDark"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtSearchPos"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:id="@+id/lnGroupButton"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:src="@mipmap/scanitem"
+                android:id="@+id/btnBarcode"
+                android:scaleType="fitXY"
+                android:layout_marginRight="10dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity = "center"/>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:src="@mipmap/order"
+                android:id="@+id/btnOrder"
+                android:scaleType="fitXY"
+                android:layout_marginRight="10dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity = "center"/>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:src="@mipmap/dummy"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="fitXY"
+                android:id="@+id/btnDummy"
+                android:layout_marginRight="10dp"
+                android:layout_gravity = "center"/>
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:src="@mipmap/viewlist"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="fitXY"
+                android:id="@+id/btnShowMenu"
+                android:layout_marginRight="10dp"
+                android:layout_gravity = "center"/>
+            <FrameLayout
+                android:layout_gravity = "center"
+                android:minWidth="36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/borderqauntity"
+                    android:scaleType="fitXY"
+                    android:id="@+id/btnBasket"
+                    android:layout_gravity = "center"/>
+                <TextView
+                    android:gravity="center"
+                    android:text="x1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12dp"
+                    android:id="@+id/txtQuantity"
+                    android:textColor="@color/primaryDark"
+                    android:layout_gravity = "center"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcvItem" />
+
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Cha-Emm\\Downloads\\BluetoothPrintXamarin-master\\BluetoothPrintXamarin-master\\PrinterClassLib\\PrinterClassLib.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Cha-Emm\\Downloads\\BluetoothPrintXamarin-master\\BluetoothPrintXamarin-master\\PrinterClassLib\\PrinterClassLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Cha-Emm\\Downloads\\BluetoothPrintXamarin-master\\BluetoothPrintXamarin-master\\PrinterClassLib\\PrinterClassLib.csproj",
+        "projectName": "PrinterClassLib",
+        "projectPath": "C:\\Users\\Cha-Emm\\Downloads\\BluetoothPrintXamarin-master\\BluetoothPrintXamarin-master\\PrinterClassLib\\PrinterClassLib.csproj",
+        "packagesPath": "C:\\Users\\Cha-Emm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cha-Emm\\Downloads\\BluetoothPrintXamarin-master\\BluetoothPrintXamarin-master\\PrinterClassLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cha-Emm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\SeniorSoft.nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {}
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

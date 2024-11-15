@@ -1,0 +1,127 @@
+<SlipLayout Name="s001.xml" Width="576" LineSpace="10" >
+	<Header TextSize="40">
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="30">@VoucherName</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@merchantName</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576"  Align="Center" Bold="False" TextSize="22">@merchantAddress1</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576"  Align="Center" Bold="False" TextSize="22">@merchantAddress2</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576"  Align="Center" Bold="False" TextSize="22">@merchantAddress3</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@merchantTel</Text>
+		</Line>
+		<!--<Line>
+      <Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">Tax ID : @merchantTaxid</Text>
+    </Line>
+    <Line>
+      <Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">Branch Tax ID:@branchTaxId</Text>
+    </Line>-->
+		<Line>
+			<Text X="10"  Width="300" Align="Left" Bold="False" TextSize="22">@Billno</Text>
+			<Text X="290" Width="250" Align="Right" Bold="False" TextSize="22">@Date</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Person</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Address1</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Address</Text>
+		</Line>
+	</Header>
+	<Details>
+		<Line Bold="False" TextSize="22">
+			<Text X="10"  Y ="0"  Width="50" Align="Left" >@QuantityItem</Text>
+			<Text X="50"  Y ="0"  Width="380" Align="Left" Bold="False" TextSize="22">@ItemName</Text>
+			<Text X="460" Y ="0"  Width="80" Align="Right" Bold="False" TextSize="30">@ItemPrice</Text>
+		</Line>
+	</Details>
+
+	<Header TextSize="40">
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@space</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">Quanitity : @CountDetail</Text>
+			<Text X="290" Width="250" Align="Right" Bold="False" TextSize="22">Quanitity Total  : @Quantity</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@space2</Text>
+		</Line>
+    <Line>
+      <Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">Subtotal</Text>
+      <Text X="260" Width="120" Align="Left" Bold="False" TextSize="22">Total</Text>
+      <Text X="460" Width="80" Align="Right" Bold="False" TextSize="22">@Total</Text>
+    </Line>
+		<Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Vat1</Text>
+			<Text X="260" Width="120" Align="Left" Bold="False" TextSize="22">@Vat2</Text>
+			<Text X="460" Width="80" Align="Right" Bold="False" TextSize="22">@Vat3</Text>
+		</Line>
+    <Line>
+      <Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Service1</Text>
+      <Text X="260" Width="120" Align="Left" Bold="False" TextSize="22">@Service2</Text>
+      <Text X="460" Width="80" Align="Right" Bold="False" TextSize="22">@Service3</Text>
+    </Line>
+    <Line>
+      <Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Member1</Text>
+      <Text X="260" Width="120" Align="Left" Bold="False" TextSize="22">@Member2</Text>
+      <Text X="460" Width="80" Align="Right" Bold="False" TextSize="22">@Member3</Text>
+    </Line>
+    <Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">@Discount1</Text>
+			<Text X="260" Width="120" Align="Left" Bold="False" TextSize="22">@Discount2</Text>
+			<Text X="460" Width="80" Align="Right" Bold="False" TextSize="22">@Discount3</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="300" Align="Left" Bold="False" TextSize="22">Total</Text>
+			<Text X="260" Width="120" Align="Left" Bold="False" TextSize="22">Grand Total</Text>
+			<Text X="460" Width="80" Align="Right" Bold="False" TextSize="22">@GrandTotal</Text>
+		</Line>
+	</Header>
+	<Header TextSize="30" LineSpace="30">
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="48">@space2</Text>
+		</Line>
+    <Line>
+      <Text X="10" Width="576" Align="Center" Bold="False" TextSize="48">@space2</Text>
+    </Line>
+    <Line>
+      <Text X="10" Width="576" Align="Center" Bold="False" TextSize="48">@space2</Text>
+    </Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="48">@space2</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="30">...THANK YOU...</Text>
+		</Line>
+    <Line>
+      <Text X="10" Width="576" Align="Center" Bold="False" TextSize="48">@space2</Text>
+    </Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@Cashier</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@space</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">Powered By SeniorSoft</Text>
+		</Line>
+		<Line>
+			<Text X="10" Width="576" Align="Center" Bold="False" TextSize="22">@space</Text>
+		</Line>
+    <Line>
+      <Text X="10" Width="576" Align="Center" Bold="False" TextSize="48">@space2</Text>
+    </Line>
+	</Header>
+
+</SlipLayout>

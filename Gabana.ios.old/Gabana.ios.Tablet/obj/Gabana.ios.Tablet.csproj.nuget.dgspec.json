@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Gabana3.Client\\Gabana.ios.Tablet\\Gabana.ios.Tablet.csproj": {}
+  },
+  "projects": {
+    "D:\\Gabana3.Client\\Gabana.ios.Tablet\\Gabana.ios.Tablet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Gabana3.Client\\Gabana.ios.Tablet\\Gabana.ios.Tablet.csproj",
+        "projectName": "Gabana.ios.Tablet",
+        "projectPath": "D:\\Gabana3.Client\\Gabana.ios.Tablet\\Gabana.ios.Tablet.csproj",
+        "packagesPath": "C:\\Users\\SS-DEV\\.nuget\\packages\\",
+        "outputPath": "D:\\Gabana3.Client\\Gabana.ios.Tablet\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SS-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

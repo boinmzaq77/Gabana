@@ -1,0 +1,13 @@
+E:\Gabana3.Client\Gabana.ORM.PoolDB\bin\Debug\netstandard2.0\Gabana.ORM.PoolDB.deps.json
+E:\Gabana3.Client\Gabana.ORM.PoolDB\bin\Debug\netstandard2.0\Gabana.ORM.PoolDB.dll
+E:\Gabana3.Client\Gabana.ORM.PoolDB\bin\Debug\netstandard2.0\Gabana.ORM.PoolDB.pdb
+E:\Gabana3.Client\Gabana.ORM.PoolDB\bin\Debug\netstandard2.0\Gabana.ORM.MerchantDB.dll
+E:\Gabana3.Client\Gabana.ORM.PoolDB\bin\Debug\netstandard2.0\Gabana.ORM.MerchantDB.pdb
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.csproj.AssemblyReference.cache
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.AssemblyInfoInputs.cache
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.AssemblyInfo.cs
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.csproj.CoreCompileInputs.cache
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.csproj.CopyComplete
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.dll
+E:\Gabana3.Client\Gabana.ORM.PoolDB\obj\Debug\netstandard2.0\Gabana.ORM.PoolDB.pdb

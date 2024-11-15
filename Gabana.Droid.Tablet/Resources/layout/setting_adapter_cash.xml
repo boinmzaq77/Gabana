@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        card_view:cardElevation="1dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardUseCompatPadding="false">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:id="@+id/txtName"
+                android:textColor="@color/eclipse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/whitesmoke"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

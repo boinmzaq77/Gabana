@@ -1,0 +1,565 @@
+<api api-source="JavaTypeSystem">
+  <package name="com.lvrenyang.io" jni-name="com/lvrenyang/io">
+    <class abstract="false" deprecated="not deprecated" extends="com.lvrenyang.io.IO" extends-generic-aware="com.lvrenyang.io.IO" jni-extends="Lcom/lvrenyang/io/IO;" final="false" name="BLEPrinting" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/BLEPrinting;">
+      <constructor deprecated="not deprecated" final="false" name="BLEPrinting" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.BLEPrinting" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Open" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="BTAddress" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="SetCallBack" jni-signature="(Lcom/lvrenyang/io/IOCallBack;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="callBack" type="com.lvrenyang.io.IOCallBack" jni-type="Lcom/lvrenyang/io/IOCallBack;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.bluetooth.BluetoothGattCallback" extends-generic-aware="android.bluetooth.BluetoothGattCallback" jni-extends="Landroid/bluetooth/BluetoothGattCallback;" final="false" name="BLEPrinting.1" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$1;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbCharacteristicChanged" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbCharacteristicChanged;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbCharacteristicRead" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbCharacteristicRead;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbCharacteristicWrite" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbCharacteristicWrite;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbConnectionStateChange" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbConnectionStateChange;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbDescriptorRead" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbDescriptorRead;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbDescriptorWrite" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbDescriptorWrite;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbReadRemoteRssi" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbReadRemoteRssi;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbReliableWriteCompleted" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbReliableWriteCompleted;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="BLEPrinting.CbServicesDiscovered" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/BLEPrinting$CbServicesDiscovered;" />
+    <class abstract="false" deprecated="not deprecated" extends="com.lvrenyang.io.IO" extends-generic-aware="com.lvrenyang.io.IO" jni-extends="Lcom/lvrenyang/io/IO;" final="false" name="BTPrinting" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/BTPrinting;">
+      <constructor deprecated="not deprecated" final="false" name="BTPrinting" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.BTPrinting" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Listen" jni-signature="(Ljava/lang/String;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="BTAddress" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="timeout" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Open" jni-signature="(Ljava/lang/String;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="BTAddress" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="SetCallBack" jni-signature="(Lcom/lvrenyang/io/IOCallBack;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="callBack" type="com.lvrenyang.io.IOCallBack" jni-type="Lcom/lvrenyang/io/IOCallBack;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Cmd" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/Cmd;" />
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Cmd.Constant" static="true" visibility="private" jni-signature="Lcom/lvrenyang/io/Cmd$Constant;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="getBaudrateInt" jni-signature="(Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strBaudrate" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getBaudrateStr" jni-signature="(I)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nBaudrate" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCodePageInt" jni-signature="(Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strCodePage" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCodePageStr" jni-signature="(I)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nCodePage" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDarknessInt" jni-signature="(Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strDarkness" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDarknessStr" jni-signature="(I)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nDarkness" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDefaultFontInt" jni-signature="(Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strDefaultFont" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getDefaultFontStr" jni-signature="(I)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nDefaultFont" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLineFeedInt" jni-signature="(Ljava/lang/String;)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strLineFeed" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getLineFeedStr" jni-signature="(I)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nLineFeed" type="int" jni-type="I" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="ALIGN_CENTER" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ALIGN_LEFT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ALIGN_RIGHT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_FONTPOSITION_ABOVE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_FONTPOSITION_ABOVEANDBELOW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_FONTPOSITION_BELOW" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_FONTPOSITION_NO" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_FONTTYPE_SMALL" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_FONTTYPE_STANDARD" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_CODE128" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="73" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_CODE39" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="69" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_CODE93" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="72" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_CODEBAR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="71" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_EAN13" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="67" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_EAN8" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="68" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_ITF" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="70" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_UPC_A" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="65" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BARCODE_TYPE_UPC_E" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="66" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BT_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650953" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BT_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="30" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BT_MAX_NAME_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="12" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BT_MAX_PWD_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="15" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_BIG5" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="254" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CHINESE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="255" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP437_Standard_Europe" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP720_Arabic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="27" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP737_Greek" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="24" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP755_East_Europe_Latvian_2" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="9" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP775" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="31" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP850_Multilingual" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP852_Latina_2" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="18" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP855" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="28" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP856" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="46" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP857_Turkish" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="29" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP858_Multilingual_Latin" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="19" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP860_Portuguese" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP862_Hebrew" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="15" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP863_Canadian_French" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP864_Arabic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="22" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP865_Nordic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_CP866_Cyrilliec" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Cp874" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="47" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_EUC_KR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="251" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Iran" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="10" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Iran_II" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_15_Latin_3" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="44" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_1_West_Europe" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="23" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_2_Latin_2" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="36" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_3_Latin_3" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="37" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_4_Baltic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="38" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_5_Cyrillic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="39" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_6_Arabic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_7_Greek" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="41" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_8_Hebrew" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="42" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_ISO_8859_9_Turkish" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="43" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Katakana" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Latvian" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="21" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_MIK_Cyrillic_Bulgarian" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_SHIFT_JIS" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="252" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Thai" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="26" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_Thai2" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="45" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_UTF_8" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="253" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1250_Central_Eurpoe" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="30" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1251_Cyrillic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1252_Latin_I" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1253_Greek" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="17" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1254_Turkish" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1255_Hebrew" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="33" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1256_Arabic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="34" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1257_Baltic" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="25" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CODEPAGE_WCP1258_Vietnam" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="35" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FAC_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1651013" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FAC_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="68" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FAC_MAX_NAME_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FAC_MAX_SN_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="29" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_BLACKWHITEREVERSE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1024" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_BOLD" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_NORMAL" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_TURNRIGHT90" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4096" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_UNDERLINE1" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="128" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_UNDERLINE2" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="256" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FONTSTYLE_UPSIDEDOWN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="512" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="IRD_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650983" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="IRD_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="30" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LAN_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650688" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LAN_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650688" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LAN_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="13" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="nbaudrate" jni-signature="[I" static="true" transient="false" type="int[]" type-generic-aware="int[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ncodepages" jni-signature="[I" static="true" transient="false" type="int[]" type-generic-aware="int[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ndarkness" jni-signature="[I" static="true" transient="false" type="int[]" type-generic-aware="int[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ndefaultfont" jni-signature="[I" static="true" transient="false" type="int[]" type-generic-aware="int[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="nlinefeed" jni-signature="[I" static="true" transient="false" type="int[]" type-generic-aware="int[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="OEM_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650741" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="OEM_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="162" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="OEM_NAME_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="PARA_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="413" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="PRN_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650701" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="PRN_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="40" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="strbaudrate" jni-signature="[Ljava/lang/String;" static="true" transient="false" type="java.lang.String[]" type-generic-aware="java.lang.String[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="strcodepages" jni-signature="[Ljava/lang/String;" static="true" transient="false" type="java.lang.String[]" type-generic-aware="java.lang.String[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="strdarkness" jni-signature="[Ljava/lang/String;" static="true" transient="false" type="java.lang.String[]" type-generic-aware="java.lang.String[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="strdefaultfont" jni-signature="[Ljava/lang/String;" static="true" transient="false" type="java.lang.String[]" type-generic-aware="java.lang.String[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="strlinefeed" jni-signature="[Ljava/lang/String;" static="true" transient="false" type="java.lang.String[]" type-generic-aware="java.lang.String[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="USER_INFO2_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1651081" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="USER_INFO2_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="USER_INFO_ADDR" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1650903" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="USER_INFO_LEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="50" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Cmd.PCmd" static="true" visibility="private" jni-signature="Lcom/lvrenyang/io/Cmd$PCmd;">
+      <field deprecated="not deprecated" final="false" name="endUpdate" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="fontUpdate" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="imaUpdate" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="readFlash" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="setBaudrate" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="setBluetooth" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="setPrintParam" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="setSystemInfo" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="startUpdate" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="test" jni-signature="[B" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="DataUtils" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/DataUtils;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="byteArraysToBytes" jni-signature="([[B)[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="data" type="byte[][]" jni-type="[[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="bytesEquals" jni-signature="([BI[BII)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="d1" type="byte[]" jni-type="[B" />
+        <parameter name="offset1" type="int" jni-type="I" />
+        <parameter name="d2" type="byte[]" jni-type="[B" />
+        <parameter name="offset2" type="int" jni-type="I" />
+        <parameter name="length" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="bytesToStr" jni-signature="([B)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="rcs" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getRandomByteArray" jni-signature="(I)[B" bridge="false" native="false" return="byte[]" jni-return="[B" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nlength" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="DES2" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/DES2;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="memcpy" jni-signature="([BI[BII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="dest" type="byte[]" jni-type="[B" />
+        <parameter name="desOffset" type="int" jni-type="I" />
+        <parameter name="src" type="byte[]" jni-type="[B" />
+        <parameter name="srcOffset" type="int" jni-type="I" />
+        <parameter name="nLength" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="memset" jni-signature="([BII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="s" type="byte[]" jni-type="[B" />
+        <parameter name="ch" type="int" jni-type="I" />
+        <parameter name="n" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="yxyDES2_DecryptAnyLength" jni-signature="([B[BI)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="_srcBytes" type="byte[]" jni-type="[B" />
+        <parameter name="dst" type="byte[]" jni-type="[B" />
+        <parameter name="_bytesLength" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="yxyDES2_EncryptAnyLength" jni-signature="([B[BI)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="_srcBytes" type="byte[]" jni-type="[B" />
+        <parameter name="dst" type="byte[]" jni-type="[B" />
+        <parameter name="_bytesLength" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="yxyDES2_InitializeKey" jni-signature="([B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="srcBytes" type="byte[]" jni-type="[B" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ESCCmd" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/ESCCmd;">
+      <field deprecated="not deprecated" final="false" name="CR" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="DES_ENCRYPT" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="DES_ENCRYPT2" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="DES_SETKEY" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="DLE_DC4_n_m_t" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ERROR" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_3_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_ALT" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_a_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_CAN" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_dollors_nL_nH" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_FF" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_L" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_lbracket_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_line_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_M_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_R_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_S" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_SP_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_t_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_T_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_V_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="ESC_W_xL_xH_yL_yH_dxL_dxH_dyL_dyH" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="FF" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="FS_line_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="FS_p_n_m" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_backslash_m" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_backslash_nL_nH" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_B_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_dollors_nL_nH" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_exclamationmark_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_E_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_f_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_H_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_h_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_k_m_n_" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_k_m_v_r_nL_nH" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_leftbracket_k_pL_pH_cn_67_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_leftbracket_k_pL_pH_cn_69_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_leftbracket_k_pL_pH_cn_80_m__d1dk" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_leftbracket_k_pL_pH_cn_fn_m" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_P_x_y" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_V_m" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_V_m_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_w_n" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="GS_W_nL_nH" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="false" name="LF" jni-signature="[B" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="HeartBeatThread" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/HeartBeatThread;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;" />
+      <constructor deprecated="not deprecated" final="false" name="HeartBeatThread" jni-signature="(Lcom/lvrenyang/io/IO;)V" bridge="false" static="false" type="com.lvrenyang.io.HeartBeatThread" synthetic="false" visibility="public">
+        <parameter name="io" type="com.lvrenyang.io.IO" jni-type="Lcom/lvrenyang/io/IO;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="BeginHeartBeat" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="EndHeartBeat" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="PauseHeartBeat" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="ResumeHeartBeat" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="ImageProcessing" static="false" visibility="" jni-signature="Lcom/lvrenyang/io/ImageProcessing;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="adjustPhotoRotation" jni-signature="(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bm" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="orientationDegree" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="alignBitmap" jni-signature="(Landroid/graphics/Bitmap;III)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="wbits" type="int" jni-type="I" />
+        <parameter name="hbits" type="int" jni-type="I" />
+        <parameter name="color" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="format_K_dither16x16" jni-signature="([III[B)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="orgpixels" type="int[]" jni-type="[I" />
+        <parameter name="xsize" type="int" jni-type="I" />
+        <parameter name="ysize" type="int" jni-type="I" />
+        <parameter name="despixels" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="format_K_dither8x8" jni-signature="([III[B)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="orgpixels" type="int[]" jni-type="[I" />
+        <parameter name="xsize" type="int" jni-type="I" />
+        <parameter name="ysize" type="int" jni-type="I" />
+        <parameter name="despixels" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="format_K_threshold" jni-signature="(Landroid/graphics/Bitmap;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mBitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="format_K_threshold" jni-signature="([III[B)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="orgpixels" type="int[]" jni-type="[I" />
+        <parameter name="xsize" type="int" jni-type="I" />
+        <parameter name="ysize" type="int" jni-type="I" />
+        <parameter name="despixels" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="resizeImage" jni-signature="(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="w" type="int" jni-type="I" />
+        <parameter name="h" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toGrayscale" jni-signature="(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bmpOriginal" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="IO" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/IO;">
+      <constructor deprecated="not deprecated" final="false" name="IO" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.IO" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="IsOpened" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="OnClose" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="OnOpen" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="PauseHeartBeat" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Read" jni-signature="([BIII)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="buffer" type="byte[]" jni-type="[B" />
+        <parameter name="offset" type="int" jni-type="I" />
+        <parameter name="count" type="int" jni-type="I" />
+        <parameter name="timeout" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="ResumeHeartBeat" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Write" jni-signature="([BII)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="buffer" type="byte[]" jni-type="[B" />
+        <parameter name="offset" type="int" jni-type="I" />
+        <parameter name="count" type="int" jni-type="I" />
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="IOCallBack" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/IOCallBack;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="OnClose" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="OnOpen" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Label1" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/Label1;">
+      <constructor deprecated="not deprecated" final="false" name="Label1" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.Label1" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawBarcode" jni-signature="(IIIIII[B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="type" type="int" jni-type="I" />
+        <parameter name="height" type="int" jni-type="I" />
+        <parameter name="unitwidth" type="int" jni-type="I" />
+        <parameter name="rotate" type="int" jni-type="I" />
+        <parameter name="str" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawBitmap" jni-signature="(IIIII[B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="width" type="int" jni-type="I" />
+        <parameter name="height" type="int" jni-type="I" />
+        <parameter name="style" type="int" jni-type="I" />
+        <parameter name="pdata" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawBox" jni-signature="(IIIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="left" type="int" jni-type="I" />
+        <parameter name="top" type="int" jni-type="I" />
+        <parameter name="right" type="int" jni-type="I" />
+        <parameter name="bottom" type="int" jni-type="I" />
+        <parameter name="borderwidth" type="int" jni-type="I" />
+        <parameter name="bordercolor" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawLine" jni-signature="(IIIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="endx" type="int" jni-type="I" />
+        <parameter name="endy" type="int" jni-type="I" />
+        <parameter name="width" type="int" jni-type="I" />
+        <parameter name="color" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawPDF417" jni-signature="(IIIIIII[B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="colnum" type="int" jni-type="I" />
+        <parameter name="lwratio" type="int" jni-type="I" />
+        <parameter name="ecc" type="int" jni-type="I" />
+        <parameter name="unitwidth" type="int" jni-type="I" />
+        <parameter name="rotate" type="int" jni-type="I" />
+        <parameter name="str" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawPlainText" jni-signature="(IIII[B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="font" type="int" jni-type="I" />
+        <parameter name="style" type="int" jni-type="I" />
+        <parameter name="str" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawQRCode" jni-signature="(IIIIII[B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="version" type="int" jni-type="I" />
+        <parameter name="ecc" type="int" jni-type="I" />
+        <parameter name="unitwidth" type="int" jni-type="I" />
+        <parameter name="rotate" type="int" jni-type="I" />
+        <parameter name="str" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="DrawRectangel" jni-signature="(IIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="left" type="int" jni-type="I" />
+        <parameter name="top" type="int" jni-type="I" />
+        <parameter name="right" type="int" jni-type="I" />
+        <parameter name="bottom" type="int" jni-type="I" />
+        <parameter name="color" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="PageBegin" jni-signature="(IIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="startx" type="int" jni-type="I" />
+        <parameter name="starty" type="int" jni-type="I" />
+        <parameter name="width" type="int" jni-type="I" />
+        <parameter name="height" type="int" jni-type="I" />
+        <parameter name="rotate" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="PageEnd" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="PagePrint" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="num" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Set" jni-signature="(Lcom/lvrenyang/io/IO;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="io" type="com.lvrenyang.io.IO" jni-type="Lcom/lvrenyang/io/IO;" />
+      </method>
+      <field deprecated="not deprecated" final="false" name="IO" jni-signature="Lcom/lvrenyang/io/IO;" static="false" transient="false" type="com.lvrenyang.io.IO" type-generic-aware="com.lvrenyang.io.IO" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.lvrenyang.io.IO" extends-generic-aware="com.lvrenyang.io.IO" jni-extends="Lcom/lvrenyang/io/IO;" final="false" name="NETPrinting" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/NETPrinting;">
+      <constructor deprecated="not deprecated" final="false" name="NETPrinting" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.NETPrinting" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Open" jni-signature="(Ljava/lang/String;I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="IPAddress" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="PortNumber" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="SetCallBack" jni-signature="(Lcom/lvrenyang/io/IOCallBack;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="callBack" type="com.lvrenyang.io.IOCallBack" jni-type="Lcom/lvrenyang/io/IOCallBack;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="Pos" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/Pos;">
+      <constructor deprecated="not deprecated" final="false" name="Pos" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.Pos" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="EMBEDDED_WriteToUart" jni-signature="([BII)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="buffer" type="byte[]" jni-type="[B" />
+        <parameter name="offset" type="int" jni-type="I" />
+        <parameter name="count" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_CheckKey" jni-signature="([B)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="key" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_EPSON_SetQRCode" jni-signature="(Ljava/lang/String;III)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strCodedata" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="nWidthX" type="int" jni-type="I" />
+        <parameter name="nVersion" type="int" jni-type="I" />
+        <parameter name="nErrorCorrectionLevel" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_FeedLine" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_PrintBWPic" jni-signature="(Landroid/graphics/Bitmap;II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mBitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="nWidth" type="int" jni-type="I" />
+        <parameter name="nMode" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_PrintPicture" jni-signature="(Landroid/graphics/Bitmap;II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="mBitmap" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;" />
+        <parameter name="nWidth" type="int" jni-type="I" />
+        <parameter name="nMode" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_QueryOnline" jni-signature="(I)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="timeout" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_QueryStatus" jni-signature="([BI)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="precbuf" type="byte[]" jni-type="[B" />
+        <parameter name="timeout" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_RTQueryStatus" jni-signature="([BI)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="precbuf" type="byte[]" jni-type="[B" />
+        <parameter name="timeout" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_Reset" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_S_Align" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="align" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_S_SetAreaWidth" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nWidth" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_S_SetBarcode" jni-signature="(Ljava/lang/String;IIIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strCodedata" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="nOrgx" type="int" jni-type="I" />
+        <parameter name="nType" type="int" jni-type="I" />
+        <parameter name="nWidthX" type="int" jni-type="I" />
+        <parameter name="nHeight" type="int" jni-type="I" />
+        <parameter name="nHriFontType" type="int" jni-type="I" />
+        <parameter name="nHriFontPosition" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_S_SetQRcode" jni-signature="(Ljava/lang/String;III)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="strCodedata" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="nWidthX" type="int" jni-type="I" />
+        <parameter name="nVersion" type="int" jni-type="I" />
+        <parameter name="nErrorCorrectionLevel" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_S_TextOut" jni-signature="(Ljava/lang/String;Ljava/lang/String;IIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="pszString" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="encoding" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="nOrgx" type="int" jni-type="I" />
+        <parameter name="nWidthTimes" type="int" jni-type="I" />
+        <parameter name="nHeightTimes" type="int" jni-type="I" />
+        <parameter name="nFontType" type="int" jni-type="I" />
+        <parameter name="nFontStyle" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_SetCharSetAndCodePage" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nCharSet" type="int" jni-type="I" />
+        <parameter name="nCodePage" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_SetKey" jni-signature="([B)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="key" type="byte[]" jni-type="[B" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_SetLineHeight" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nHeight" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_SetMotionUnit" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nHorizontalMU" type="int" jni-type="I" />
+        <parameter name="nVerticalMU" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="POS_SetRightSpacing" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="nDistance" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Set" jni-signature="(Lcom/lvrenyang/io/IO;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="io" type="com.lvrenyang.io.IO" jni-type="Lcom/lvrenyang/io/IO;" />
+      </method>
+      <field deprecated="not deprecated" final="false" name="IO" jni-signature="Lcom/lvrenyang/io/IO;" static="false" transient="false" type="com.lvrenyang.io.IO" type-generic-aware="com.lvrenyang.io.IO" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="com.lvrenyang.io.IO" extends-generic-aware="com.lvrenyang.io.IO" jni-extends="Lcom/lvrenyang/io/IO;" final="false" name="USBPrinting" static="false" visibility="public" jni-signature="Lcom/lvrenyang/io/USBPrinting;">
+      <constructor deprecated="not deprecated" final="false" name="USBPrinting" jni-signature="()V" bridge="false" static="false" type="com.lvrenyang.io.USBPrinting" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Close" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="Ctl" jni-signature="(IIII[BII)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="requestType" type="int" jni-type="I" />
+        <parameter name="request" type="int" jni-type="I" />
+        <parameter name="value" type="int" jni-type="I" />
+        <parameter name="index" type="int" jni-type="I" />
+        <parameter name="buffer" type="byte[]" jni-type="[B" />
+        <parameter name="length" type="int" jni-type="I" />
+        <parameter name="timeout" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="Open" jni-signature="(Landroid/hardware/usb/UsbManager;Landroid/hardware/usb/UsbDevice;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="manager" type="android.hardware.usb.UsbManager" jni-type="Landroid/hardware/usb/UsbManager;" />
+        <parameter name="device" type="android.hardware.usb.UsbDevice" jni-type="Landroid/hardware/usb/UsbDevice;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="SetCallBack" jni-signature="(Lcom/lvrenyang/io/IOCallBack;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="callBack" type="com.lvrenyang.io.IOCallBack" jni-type="Lcom/lvrenyang/io/IOCallBack;" />
+      </method>
+    </class>
+  </package>
+</api>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#2c3e50</color>
+  <color name="colorPrimaryDark">#1B3147</color>
+  <color name="colorAccent">#3498db</color>
+  <color name="primary">#33AAE1</color>
+  <color name="primaryDark">#0095DA</color>
+  <color name="aliceblue">#F1FAFF</color>
+  <color name="accent">#FFC107</color>
+  <color name="lightPrimary">#DCF4FF</color>
+  <color name="textIcon">#FFFFFF</color>
+  <color name="primaryText">#212121</color>
+  <color name="secondaryText">#ACACAC</color>
+  <color name="divider">#B6B6B6</color>
+  <color name="whisper">#E8E8E8</color>
+  <color name="textorange">#F75600</color>
+  <color name="textorangehint">#FA9A66</color>
+  <color name="eclipse">#404040</color>
+  <color name="nobel">#A2A2A2</color>
+  <color name="grey">#888888</color>
+  <color name="linegraycolor">#E2E2E2</color>
+  <color name="textgray">#707070</color>
+  <color name="BtnBlueColor">#2396CE</color>
+  <color name="btngraycolor">#E2E2E2</color>
+  <color name="texthintcolor">#86CEEF</color>
+  <color name="whitesmoke">#F8F8F8</color>
+  <color name="colorclearcart">#E32D49</color>
+  <color name="colorrule">#C8C8C8</color>
+  <color name="coloralear">#F8971D</color>
+  <color name="gainsboro">#D8D8D8</color>
+  
+</resources>

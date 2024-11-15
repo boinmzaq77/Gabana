@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft ="10dp"
+    tools:showIn="navigation_view">
+  <item
+      android:id="@+id/changepassword"
+      android:icon="@mipmap/MenuPassword"
+      android:title="@string/changepassword" />
+  <item
+      android:id="@+id/changebranch"
+      android:icon="@mipmap/settingbranch"
+      android:title="@string/changebranch" />
+  <item
+      android:id="@+id/languagesetting"
+      android:icon="@mipmap/MenuLanguage"
+      android:title="@string/languagesetting" />
+ 
+  <item
+      android:id="@+id/contactus"
+      android:icon="@mipmap/MenuContact"
+      android:title="@string/contactus" />
+  <item
+      android:id="@+id/termconditions"
+      android:icon="@mipmap/MenuPolicy"
+      android:title="@string/termconditions" />
+  <item
+     android:actionLayout="@layout/action_view_text"
+      android:id="@+id/version"
+      android:icon="@mipmap/MenuVersion"
+      android:title="@string/version"
+      android:titleCondensed="@string/version"
+      android:showAsAction="always|collapseActionView"/>
+  <item
+      android:id="@+id/guildes"
+      android:icon="@mipmap/menuguide"
+      android:title="@string/guide" />
+  <item
+      android:id="@+id/logout"
+      android:icon="@mipmap/MenuLogout"
+      android:title="@string/logout" />
+
+</menu>
+

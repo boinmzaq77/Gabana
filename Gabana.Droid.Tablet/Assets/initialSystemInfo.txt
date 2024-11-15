@@ -1,0 +1,16 @@
+INSERT INTO SystemInfo(SystemID,Name)
+VALUES
+(10,"Branch"),
+(20,"Category"),
+(30,"Item"),
+(31,"ItemOnBranch"),
+(40,"Discount"),
+(50,"Customer"),
+(60,"NoteCategory"),
+(70,"Note")
+
+//limit item datastatus != 'D' = 10000
+//limit customer datastatus != 'D' = 10000
+//26/04/2022
+
+

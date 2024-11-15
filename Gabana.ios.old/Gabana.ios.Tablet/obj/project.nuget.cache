@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7LYwzGqnraqHKBxkl1NHFJGR1uqDoLSR6ZW3cEFKSsKMrcrpm9IBr3qrFH4oHe2xmlRKPGzogt8irV4lZyPkjw==",
+  "success": true,
+  "projectFilePath": "D:\\Gabana3.Client\\Gabana.ios.Tablet\\Gabana.ios.Tablet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{847EAB6B-2677-4FB7-8F3F-A8DD81B032B2}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{f1d599d5-32e4-4ac3-bfce-fa91478e30e4}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Gabana.ios.Phone</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Gabana.ios.Phone</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <ProvisioningType>manual</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>TRACE;__IOS__;__MOBILE__;__UNIFIED__;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchSdkVersion>14.1</MtouchSdkVersion>
+    <MtouchLink>None</MtouchLink>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AddNewItemPOSController.cs" />
+    <Compile Include="AddNewItemPOSController.designer.cs">
+      <DependentUpon>AddNewItemPOSController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editProfileController.cs" />
+    <Compile Include="editProfileController.designer.cs">
+      <DependentUpon>editProfileController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDBTransaction.cs" />
+    <Compile Include="POS\CartResultController.cs" />
+    <Compile Include="POS\CartResultController.designer.cs">
+      <DependentUpon>CartResultController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\Payment\PaymentViewCell.cs" />
+    <Compile Include="POS\Payment\PaymentViewCell.designer.cs">
+      <DependentUpon>PaymentViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\Payment\PaymentCollectionDelegate.cs" />
+    <Compile Include="POS\Payment\PaymentViewDataSource.cs" />
+    <Compile Include="POS\Payment\PaymentController.cs" />
+    <Compile Include="POS\Payment\PaymentController.designer.cs">
+      <DependentUpon>PaymentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\DummyItemController.cs" />
+    <Compile Include="POS\DummyItemController.designer.cs">
+      <DependentUpon>DummyItemController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GabanaLoading.cs" />
+    <Compile Include="POS\itemPOSViewCell.cs" />
+    <Compile Include="POS\itemPOSViewCell.designer.cs">
+      <DependentUpon>itemPOSViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginController.cs" />
+    <Compile Include="LoginController.designer.cs">
+      <DependentUpon>LoginController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginNavigationController.cs" />
+    <Compile Include="loginNavigationController.designer.cs">
+      <DependentUpon>loginNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInOTPController.cs" />
+    <Compile Include="LogInOTPController.designer.cs">
+      <DependentUpon>LogInOTPController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="mainitemViewCell.cs" />
+    <Compile Include="mainitemViewCell.designer.cs">
+      <DependentUpon>mainitemViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPageController.cs" />
+    <Compile Include="MainPageController.designer.cs">
+      <DependentUpon>MainPageController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainItemViewDataSource.cs" />
+    <Compile Include="MainitemCollectionDelegate.cs" />
+    <Compile Include="POS\itemPOSCollectionDelegate.cs" />
+    <Compile Include="POS\ItemPOSViewDataSource.cs" />
+    <Compile Include="POS\POSMainitemCollectionDelegate.cs" />
+    <Compile Include="POS\POSMainItemViewDataSource.cs" />
+    <Compile Include="POS\POSheaderViewCell.cs" />
+    <Compile Include="POS\POSheaderViewCell.designer.cs">
+      <DependentUpon>POSheaderViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\POSController.cs" />
+    <Compile Include="POS\POSController.designer.cs">
+      <DependentUpon>POSController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS\ScanItemsQrController.cs" />
+    <Compile Include="POS\ScanItemsQrController.designer.cs">
+      <DependentUpon>ScanItemsQrController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SceneDelegate.cs" />
+    <InterfaceDefinition Include="POS.storyboard" />
+    <BundleResource Include="Resources\GabanaLocalDB.db" />
+    <None Include="Resources\GabanaLocalDBT4.db" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FirstViewController.cs" />
+    <Compile Include="FirstViewController.designer.cs">
+      <DependentUpon>FirstViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondViewController.cs" />
+    <Compile Include="SecondViewController.designer.cs">
+      <DependentUpon>SecondViewController.cs</DependentUpon>
+    </Compile>
+    <ImageAsset Include="Assets.xcassets\Merchant.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Merchant.imageset\MerchantId.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Merchant.imageset\MerchantId1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Merchant.imageset\MerchantId2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Pass.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Pass.imageset\Password.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Pass.imageset\Password1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Pass.imageset\Password2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\User.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\User.imageset\Username.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\User.imageset\Username1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\User.imageset\Username2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Main.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\BackB.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\BackB1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\BackB2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogin.imageset\GabanaLogIn.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogin.imageset\GabanaLogIn1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogin.imageset\GabanaLogIn2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\GabanaMain4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\GabanaMain5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\GabanaMain7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Icon1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Icon1.imageset\Language.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\BackB.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaLogin.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\GabanaMain.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net.Mobile">
+      <Version>2.4.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\logo.jpg" />
+    <BundleResource Include="Resources\PoweredBySNS.png" />
+    <BundleResource Include="Resources\Email.png" />
+    <BundleResource Include="Resources\OTP.png" />
+    <BundleResource Include="Resources\Pass.png" />
+    <BundleResource Include="Resources\Tel.png" />
+    <BundleResource Include="Resources\Username.png" />
+    <BundleResource Include="Resources\edittxtborderbox.xml" />
+    <BundleResource Include="Resources\MainLogout.png" />
+    <BundleResource Include="Resources\MainSetting.png" />
+    <BundleResource Include="Resources\wee.jpg" />
+    <BundleResource Include="Resources\binblue.png" />
+    <BundleResource Include="Resources\iconscan.png" />
+    <BundleResource Include="Resources\LoginUsername.png" />
+    <BundleResource Include="Resources\searchblue.png" />
+    <BundleResource Include="Resources\sort2blue.png" />
+    <BundleResource Include="Resources\Item.png" />
+    <BundleResource Include="Resources\LogOut.png" />
+    <BundleResource Include="Resources\MerchantId.png" />
+    <BundleResource Include="Resources\Password.png" />
+    <BundleResource Include="Resources\POS.png" />
+    <BundleResource Include="Resources\Setting.png" />
+    <BundleResource Include="Resources\Edit05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gabana3.Share\Gabana.ORM\Gabana.ORM.csproj">
+      <Project>{61d886e0-b1ac-43f8-a714-235c15738b1a}</Project>
+      <Name>Gabana.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gabana.Controller\Gabana.Controller.csproj">
+      <Project>{59825f8b-184d-4555-86f1-22fca7bc99f1}</Project>
+      <Name>Gabana.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gabana.Model\Gabana.Model.csproj">
+      <Project>{2c4b3b46-484b-41c2-98fd-2af5f75c43c3}</Project>
+      <Name>Gabana.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

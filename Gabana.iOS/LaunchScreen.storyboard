@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view contentMode="scaleToFill" id="23384" key="view">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32607" image="App.png">
+                                <rect key="frame" x="147.5" y="141" width="120" height="120"/>
+                                <constraints>
+                                    <constraint id="32608" firstAttribute="height" constant="120"/>
+                                    <constraint id="32609" firstAttribute="width" constant="120"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="32610" translatesAutoresizingMaskIntoConstraints="NO" image="GabanaTxt.png">
+                                <rect key="frame" x="115.5" y="281" width="184" height="57"/>
+                                <constraints>
+                                    <constraint id="32611" firstAttribute="width" constant="184"/>
+                                    <constraint id="32612" firstAttribute="height" constant="57"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PoweredBySNS.png" translatesAutoresizingMaskIntoConstraints="NO" id="33409">
+                                <rect key="frame" x="87" y="687" width="240" height="29"/>
+                                <constraints>
+                                    <constraint id="33410" firstAttribute="height" constant="29"/>
+                                    <constraint id="33411" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="34182" firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="33409" secondAttribute="bottom" constant="20"/>
+                            <constraint id="34918" firstItem="33409" firstAttribute="centerX" secondItem="23384" secondAttribute="centerX"/>
+                            <constraint id="35653" firstItem="32607" firstAttribute="centerX" secondItem="23384" secondAttribute="centerX"/>
+                            <constraint id="36424" firstItem="32607" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="121"/>
+                            <constraint id="37194" firstItem="32610" firstAttribute="top" secondItem="32607" secondAttribute="bottom" constant="20"/>
+                            <constraint id="37932" firstItem="32610" firstAttribute="centerX" secondItem="23384" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PoweredBySNS.png" width="700" height="100"/>
+        <image name="GabanaTxt3.png" width="736" height="228"/>
+        <image name="App.png" width="480" height="480"/>
+    </resources>
+</document>

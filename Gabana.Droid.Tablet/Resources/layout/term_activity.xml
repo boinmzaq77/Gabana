@@ -1,0 +1,815 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/primary">
+        <LinearLayout
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/imgBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@mipmap/backw" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/textIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Terms of Service  Privacy Policy"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:id="@+id/lnBack"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View
+        android:background="@color/linegraycolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <ScrollView
+        android:layout_weight="0.8"
+        android:padding = "5dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginRight="256dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity = "clip_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy1"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail1"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail2"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy2"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy3"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail3"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail4"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail5"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail6"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail7"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy4"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail8"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail9"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail10"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy5"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail11"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail12"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail13"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail14"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail15"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy6"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail15"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail16"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail17"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail18"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail19"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy7"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail20"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail21"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail22"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail23"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy8"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail24"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail25"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/policy9"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail26"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition1"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition2"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail27"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail28"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail29"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail30"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition3"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail31"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail32"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail33"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail34"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail35"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail36"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail37"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail38"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail39"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail40"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail41"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail42"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition4"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail43"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail44"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail45"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail46"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail47"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail48"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail49"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail50"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail51"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail52"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition5"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail53"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition6"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail54"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition7"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail55"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail56"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail57"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition8"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail58"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+
+            <TextView
+                android:textStyle = "bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/condition9"
+                android:textSize = "15dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail59"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail60"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail61"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail62"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail63"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail64"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/detail65"
+                android:textSize = "14dp"
+                android:textColor = "#000" />
+            <View
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="horizontal"
+        android:layout_marginLeft="256dp"
+        android:layout_marginRight="256dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgTerm"
+                    android:layout_margin="16dp"
+                    android:background="@mipmap/optioncheck"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/eclipse"
+                    android:text="Term of Service"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <FrameLayout
+                    android:id="@+id/lnTerm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgPolicy"
+                    android:layout_margin="18dp"
+                    android:background="@mipmap/optioncheck"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:layout_marginLeft="45dp"
+                    android:textColor="@color/eclipse"
+                    android:text="Privacy Policy"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <FrameLayout
+                    android:id="@+id/lnPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frameAccept"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnSave"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:text="@string/textaccept"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btnbluerectangle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

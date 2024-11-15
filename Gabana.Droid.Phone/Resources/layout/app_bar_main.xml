@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDimension"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/img_Logo"
+                android:background="@mipmap/gabanamain"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </android.support.v7.widget.Toolbar>
+        <FrameLayout
+            android:background="@android:color/white"
+            android:layout_marginTop="-60dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/menu"
+                android:background="@mipmap/menu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+        </FrameLayout>
+        <include layout="@layout/main_activity_main" />
+    </android.support.design.widget.AppBarLayout>
+    
+</android.support.design.widget.CoordinatorLayout>

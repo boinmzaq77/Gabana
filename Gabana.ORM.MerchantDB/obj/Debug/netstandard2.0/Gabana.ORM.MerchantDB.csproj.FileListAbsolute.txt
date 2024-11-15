@@ -1,0 +1,10 @@
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\bin\Debug\netstandard2.0\Gabana.ORM.MerchantDB.deps.json
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\bin\Debug\netstandard2.0\Gabana.ORM.MerchantDB.dll
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\bin\Debug\netstandard2.0\Gabana.ORM.MerchantDB.pdb
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.csproj.AssemblyReference.cache
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.GeneratedMSBuildEditorConfig.editorconfig
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.AssemblyInfoInputs.cache
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.AssemblyInfo.cs
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.csproj.CoreCompileInputs.cache
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.dll
+E:\Gabana3.Client\Gabana.ORM.MerchantDB\obj\Debug\netstandard2.0\Gabana.ORM.MerchantDB.pdb
